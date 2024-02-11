@@ -97,7 +97,7 @@
 
 	return ..()
 
-	/datum/wound/burn/robotic/overheat/wound_injury(datum/wound/old_wound, attack_direction)
+/datum/wound/burn/robotic/overheat/wound_injury(datum/wound/old_wound, attack_direction)
 	. = ..()
 
 	if (old_wound && old_wound.severity > severity && istype(old_wound, /datum/wound/burn/robotic/overheat))
@@ -132,9 +132,8 @@
 /datum/wound/burn/robotic/overheat/Destroy()
 	QDEL_NULL(mob_glow)
 
-		highest_scar = null
-	return ..()
-
+ highest_scar = null
+ return ..()
 
 /datum/wound/burn/robotic/overheat/set_victim(mob/living/new_victim)
 	if (victim)

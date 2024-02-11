@@ -220,7 +220,7 @@
 	if (!victim)
 		return seconds_for_intensity
 
-        seconds_for_intensity -= (get_heat_healing() * seconds_per_tick)
+ seconds_for_intensity -= (get_heat_healing() * seconds_per_tick)
 
 	if (seconds_for_intensity > 0 && HAS_TRAIT(victim, TRAIT_COAGULATING))
 		seconds_for_intensity *= ELECTRICAL_DAMAGE_CLOTTING_PROGRESS_MULT

@@ -363,7 +363,7 @@
 	if (limb.body_zone == BODY_ZONE_CHEST && COOLDOWN_FINISHED(src, movement_stagger_cooldown))
 		var/stagger_chance = chest_movement_stagger_chance * overall_mult
 		if (prob(stagger_chance))
-		    COOLDOWN_START(src, movement_stagger_cooldown, 4 SECONDS)
+			COOLDOWN_START(src, movement_stagger_cooldown, 4 SECONDS)
 			stagger(base_movement_stagger_score, shake_duration = base_stagger_movement_shake_duration, from_movement = TRUE, shift = movement_stagger_shift, knockdown_ratio = stagger_aftershock_knockdown_movement_ratio)
 
 	last_time_victim_moved = world.time

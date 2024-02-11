@@ -46,13 +46,14 @@
 			if (wound.severity == WOUND_SEVERITY_CRITICAL)
 				holder.icon_state = "hudcriticalwound"
 				highest_severity_found = TRUE
+				break
 			else if (wound.severity == WOUND_SEVERITY_SEVERE && !highest_severity_found)
 				holder.icon_state = "hudseverewound"
 				highest_severity_found = TRUE
 			else if (wound.severity == WOUND_SEVERITY_MODERATE && !highest_severity_found)
 				holder.icon_state = "hudmoderatewound"
 				highest_severity_found = TRUE
-					if(highest_severity_found && !flickering_wound_hud && virus_threat)
+		if(highest_severity_found && !flickering_wound_hud && virus_threat)
 			addtimer(CALLBACK(src, PROC_REF(update_hud)), 1 SECONDS)
 			flickering_wound_hud = TRUE
 

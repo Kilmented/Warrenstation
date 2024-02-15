@@ -26867,6 +26867,10 @@
 /obj/item/paper/fluff/jobs/engineering/frequencies,
 /turf/open/floor/iron,
 /area/station/tcommsat/computer)
+"ccj" = (
+/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/turf/open/floor/carpet,
+/area/station/command/heads_quarters/rd)
 "ccl" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/turf_decal/siding/yellow,
@@ -53962,10 +53966,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
 /area/station/command/heads_quarters/blueshield)
-"szn" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
-/turf/open/floor/carpet,
-/area/station/command/heads_quarters/rd)
 "szO" = (
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/effect/turf_decal/stripes/line{
@@ -108885,7 +108885,7 @@ rRT
 hEj
 iTn
 rSS
-szn
+ccj
 kVL
 bEC
 bCk
@@ -109142,7 +109142,7 @@ rRT
 xYH
 iTn
 rQi
-szn
+ccj
 nvJ
 bEC
 bxi

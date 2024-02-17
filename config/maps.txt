@@ -15,34 +15,9 @@ endmap
 
 # Production-level maps.
 
-map birdshot
-	#default
-	maxplayers 66
-	votable
-endmap
-
-map deltastation
-	votable
-endmap
-
-map icebox
-	votable
-endmap
-
-map metastation
-	minplayers 25
-	#voteweight 0.5
-	votable
-endmap
-
-map northstar
-	minplayers 50
-	votable
-endmap
-
-map tramstation
-	minplayers 35
-	votable
+map box
+	default
+	maxplayers 0
 endmap
 
 # Debug-only maps.
@@ -56,33 +31,5 @@ endmap
 map runtimestation
 endmap
 
-##SKYRAT MAPS##
-
-map blueshift
-	votable
-endmap
-
-map voidraptor
-	votable
-endmap
-
-map biodome
-	votable
-endmap
-
-map limastation
-	votable
-endmap
-
-##BUBBERSTATION MAPS##
-
-map moonstation
-	votable
-endmap
-
-map ss13_construct
-endmap
-
-map kilostation
-	votable
+map metastation
 endmap

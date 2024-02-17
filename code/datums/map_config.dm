@@ -1,7 +1,7 @@
 //This file is used to contain unique properties of every map, and how we wish to alter them on a per-map basis.
 //Use JSON files that match the datum layout and you should be set from there.
 //Right now, we default to MetaStation to ensure something does indeed load by default.
-//  -san7890 (with regards to Cyberboss)
+//  -san7890 (with regards to Cyberboss) // bookmark
 
 /datum/map_config
 	// Metadata
@@ -14,9 +14,9 @@
 	var/votable = FALSE
 
 	// Config actually from the JSON - should default to Meta
-	var/map_name = "MetaStation"
-	var/map_path = "map_files/MetaStation"
-	var/map_file = "MetaStation.dmm"
+	var/map_name = "BoxStation"
+	var/map_path = "map_files/BoxStation"
+	var/map_file = "BoxStation.dmm"
 
 	var/traits = null
 	var/space_ruin_levels = DEFAULT_SPACE_RUIN_LEVELS

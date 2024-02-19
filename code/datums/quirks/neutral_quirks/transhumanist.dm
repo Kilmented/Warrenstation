@@ -105,7 +105,7 @@
 		part_type = GLOB.part_choice_transhuman[pick(GLOB.part_choice_transhuman)]
 
 	var/mob/living/carbon/human/human_holder = quirk_holder
-    var/obj/item/new_part = new part_type()
+	var/obj/item/new_part = new part_type()
 	if(isbodypart(new_part))
 		var/obj/item/bodypart/new_bodypart = new_part
 		slot_string = "[new_bodypart.plaintext_zone]"

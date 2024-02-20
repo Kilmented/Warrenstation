@@ -20,49 +20,9 @@ GLOBAL_LIST_INIT(loadout_belts, generate_loadout_items(/datum/loadout_item/belts
 	else
 		outfit.belt = item_path
 
-/datum/loadout_item/belts/fanny_pack_black
-	name = "Black Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/black
-
-/datum/loadout_item/belts/fanny_pack_blue
-	name = "Blue Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/blue
-
-/datum/loadout_item/belts/fanny_pack_brown
-	name = "Brown Fannypack"
-	item_path = /obj/item/storage/belt/fannypack
-
-/datum/loadout_item/belts/fanny_pack_cyan
-	name = "Cyan Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/cyan
-
-/datum/loadout_item/belts/fanny_pack_green
-	name = "Green Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/green
-
-/datum/loadout_item/belts/fanny_pack_orange
-	name = "Orange Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/orange
-
-/datum/loadout_item/belts/fanny_pack_pink
-	name = "Pink Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/pink
-
-/datum/loadout_item/belts/fanny_pack_purple
-	name = "Purple Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/purple
-
-/datum/loadout_item/belts/fanny_pack_red
-	name = "Red Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/red
-
-/datum/loadout_item/belts/fanny_pack_yellow
-	name = "Yellow Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/yellow
-
-/datum/loadout_item/belts/fanny_pack_white
-	name = "White Fannypack"
-	item_path = /obj/item/storage/belt/fannypack/white
+/datum/loadout_item/belts/trinket_belt
+	name = "Trinket Belt"
+	item_path = /obj/item/storage/belt/fannypack/occult
 
 /datum/loadout_item/belts/lantern
 	name = "Lantern"

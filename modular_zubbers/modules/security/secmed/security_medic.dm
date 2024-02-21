@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/security_medic
 	title = JOB_SECURITY_MEDIC
 	description = "Patch up officers and prisoners, realize you don't have the tools to Tend Wounds, barge into Medbay and tell them how to do their jobs"
@@ -156,3 +157,4 @@
 	new /obj/item/storage/belt/medical(src)
 	new /obj/item/storage/belt/security/medic/full(src)
 	new /obj/item/storage/bag/garment/secmed(src)
+JOB REMOVAL END */

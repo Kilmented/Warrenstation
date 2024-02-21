@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/corrections_officer
 	title = JOB_CORRECTIONS_OFFICER
 	description = "Guard the permabrig, stand around looking imposing, get fired for abusing the prisoners"
@@ -57,6 +58,6 @@
 	belt = /obj/item/modular_computer/pda/security
 
 	id_trim = /datum/id_trim/job/corrections_officer
-
+JOB REMOVAL END */
 
 

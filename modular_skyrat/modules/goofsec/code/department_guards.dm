@@ -256,6 +256,7 @@ JOB REMOVAL END */
 /*
 	MEDICAL GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/orderly
 	title = JOB_ORDERLY
 	description = "Defend the medical department, hold down idiots who refuse the vaccine, assist medical with prep and/or cleanup."
@@ -351,7 +352,7 @@ JOB REMOVAL END */
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CMO, ACCESS_CHANGE_IDS)
 	job = /datum/job/orderly
-
+JOB REMOVAL END */
 /*
 	ENGINEERING GUARD DATUMS
 */

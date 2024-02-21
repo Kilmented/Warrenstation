@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/head_of_security
 	title = JOB_HEAD_OF_SECURITY
 	description = "Coordinate security personnel, ensure they are not corrupt, \
@@ -86,3 +87,4 @@
 	head = null
 	mask = /obj/item/clothing/mask/gas/sechailer
 	internals_slot = ITEM_SLOT_SUITSTORE
+JOB REMOVAL END */

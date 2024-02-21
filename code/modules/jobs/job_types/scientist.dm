@@ -53,7 +53,7 @@
 	satchel = /obj/item/storage/backpack/satchel/science
 	duffelbag = /obj/item/storage/backpack/duffelbag/science
 	messenger = /obj/item/storage/backpack/messenger/science
-
+JOB REMOVAL END */
 /datum/outfit/job/scientist/pre_equip(mob/living/carbon/human/H)
 	..()
 	try_giving_horrible_tie()
@@ -65,7 +65,7 @@
 /datum/outfit/job/scientist/get_types_to_preload()
 	. = ..()
 	. += /obj/item/clothing/neck/tie/horrible
-JOB REMOVAL END */
+
 /// A version of the scientist outfit that is guaranteed to be the same every time
 /datum/outfit/job/scientist/consistent
 	name = "Scientist - Consistent"

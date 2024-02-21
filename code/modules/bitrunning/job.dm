@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/bitrunner
 	title = JOB_BITRUNNER
 	description = "Surf the virtual domain for gear and loot. Decrypt your rewards on station."
@@ -39,3 +40,4 @@
 	uniform = /obj/item/clothing/under/rank/cargo/bitrunner
 	belt = /obj/item/modular_computer/pda/bitrunner
 	ears = /obj/item/radio/headset/headset_cargo
+JOB REMOVAL END */

@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/scientist
 	title = JOB_SCIENTIST
 	description = "Do experiments, perform research, feed the slimes, make bombs."
@@ -71,3 +72,4 @@
 
 /datum/outfit/job/scientist/consistent/try_giving_horrible_tie()
 	return
+JOB REMOVAL END */

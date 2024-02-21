@@ -152,6 +152,7 @@
 /*
 	SCIENCE GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/science_guard
 	title = JOB_SCIENCE_GUARD
 	description = "Figure out why the emails aren't working, keep an eye on the eggheads, protect them from their latest mistakes."
@@ -251,10 +252,11 @@
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_RD, ACCESS_CHANGE_IDS)
 	job = /datum/job/science_guard
-
+JOB REMOVAL END */
 /*
 	MEDICAL GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/orderly
 	title = JOB_ORDERLY
 	description = "Defend the medical department, hold down idiots who refuse the vaccine, assist medical with prep and/or cleanup."
@@ -350,10 +352,11 @@
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CMO, ACCESS_CHANGE_IDS)
 	job = /datum/job/orderly
-
+JOB REMOVAL END */
 /*
 	ENGINEERING GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/engineering_guard
 	title = JOB_ENGINEERING_GUARD
 	description = "Monitor the supermatter, keep an eye on atmospherics, make sure everyone is wearing Proper Protective Equipment."
@@ -454,10 +457,11 @@
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CE, ACCESS_CHANGE_IDS)
 	job = /datum/job/engineering_guard
-
+JOB REMOVAL END */
 /*
 	CARGO GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/customs_agent
 	title = JOB_CUSTOMS_AGENT
 	description = "Inspect the packages coming to and from the station, protect the cargo department, beat the shit out of people trying to ship Cocaine to the Spinward Stellar Coalition."
@@ -556,6 +560,8 @@
 /*
 	SERVICE GUARD DATUMS
 */
+JOB REMOVAL END */
+/* JOB REMOVAL START
 /datum/job/bouncer
 	title = JOB_BOUNCER
 	description = "Make sure people don't jump the kitchen counter, stop Chapel vandalism, check bargoer's IDs, prevent the dreaded \"food fight\"."
@@ -648,6 +654,7 @@
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_HOP, ACCESS_CHANGE_IDS)
 	job = /datum/job/bouncer
+JOB REMOVAL END */
 
 /*
 	Departmental Batons

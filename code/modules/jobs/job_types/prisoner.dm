@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/prisoner
 	title = JOB_PRISONER
 	description = "Keep yourself occupied in permabrig."
@@ -78,3 +79,5 @@
 		var/obj/item/bodypart/tatted_limb = pick_n_take(limbs_to_tat)
 		var/list/tattoo = pick_n_take(SSpersistence.prison_tattoos_to_use)
 		tatted_limb.AddComponent(/datum/component/tattoo, tattoo["story"])
+
+		 JOB REMOVAL END */

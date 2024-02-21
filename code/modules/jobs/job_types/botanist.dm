@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/botanist
 	title = JOB_BOTANIST
 	description = "Grow plants for the cook, for medicine, and for recreation."
@@ -55,3 +56,4 @@
 	satchel = /obj/item/storage/backpack/satchel/hyd
 	duffelbag = /obj/item/storage/backpack/duffelbag/hydroponics
 	messenger = /obj/item/storage/backpack/messenger/hyd
+JOB REMOVAL END */

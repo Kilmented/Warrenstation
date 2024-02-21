@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/blacksmith
 	title = JOB_BLACKSMITH
 	description = "Smith wares, Sell them."
@@ -51,3 +52,4 @@
 	ears = /obj/item/radio/headset/headset_cargo
 	shoes = /obj/item/clothing/shoes/workboots
 	gloves = /obj/item/clothing/gloves/color/brown
+JOB REMOVAL END */

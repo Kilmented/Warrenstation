@@ -356,6 +356,7 @@ JOB REMOVAL END */
 /*
 	ENGINEERING GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/engineering_guard
 	title = JOB_ENGINEERING_GUARD
 	description = "Monitor the supermatter, keep an eye on atmospherics, make sure everyone is wearing Proper Protective Equipment."
@@ -456,7 +457,7 @@ JOB REMOVAL END */
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CE, ACCESS_CHANGE_IDS)
 	job = /datum/job/engineering_guard
-
+JOB REMOVAL END */ 
 /*
 	CARGO GUARD DATUMS
 */

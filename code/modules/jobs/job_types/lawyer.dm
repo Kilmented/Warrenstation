@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/lawyer
 	title = JOB_LAWYER
 	description = "Advocate for prisoners, create law-binding contracts, \
@@ -63,3 +64,4 @@
 	. = ..()
 	. += /obj/item/clothing/under/rank/civilian/lawyer/purpsuit
 	. += /obj/item/clothing/suit/toggle/lawyer/purple
+JOB REMOVAL END */

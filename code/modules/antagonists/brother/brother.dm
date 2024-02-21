@@ -110,11 +110,9 @@
 	var/icon/brother1_icon = render_preview_outfit(/datum/outfit/job/quartermaster, brother1)
 	brother1_icon.Blend(icon('icons/effects/blood.dmi', "maskblood"), ICON_OVERLAY)
 	brother1_icon.Shift(WEST, 8)
-/* SCIENTIST JOB REMOVAL START
 	var/icon/brother2_icon = render_preview_outfit(/datum/outfit/job/scientist/consistent, brother2)
 	brother2_icon.Blend(icon('icons/effects/blood.dmi', "uniformblood"), ICON_OVERLAY)
 	brother2_icon.Shift(EAST, 8)
-SCIENTIST JOB REMOVAL END */
 	var/icon/final_icon = brother1_icon
 	final_icon.Blend(brother2_icon, ICON_OVERLAY)
 

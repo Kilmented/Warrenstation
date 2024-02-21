@@ -152,6 +152,7 @@
 /*
 	SCIENCE GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/science_guard
 	title = JOB_SCIENCE_GUARD
 	description = "Figure out why the emails aren't working, keep an eye on the eggheads, protect them from their latest mistakes."
@@ -251,7 +252,7 @@
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_RD, ACCESS_CHANGE_IDS)
 	job = /datum/job/science_guard
-
+JOB REMOVAL END */
 /*
 	MEDICAL GUARD DATUMS
 */

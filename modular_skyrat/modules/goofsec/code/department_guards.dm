@@ -556,6 +556,8 @@
 /*
 	SERVICE GUARD DATUMS
 */
+
+/* JOB REMOVAL START
 /datum/job/bouncer
 	title = JOB_BOUNCER
 	description = "Make sure people don't jump the kitchen counter, stop Chapel vandalism, check bargoer's IDs, prevent the dreaded \"food fight\"."
@@ -648,6 +650,7 @@
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_HOP, ACCESS_CHANGE_IDS)
 	job = /datum/job/bouncer
+JOB REMOVAL END */
 
 /*
 	Departmental Batons

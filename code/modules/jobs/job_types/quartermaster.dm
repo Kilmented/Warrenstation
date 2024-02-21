@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/quartermaster
 	title = JOB_QUARTERMASTER
 	description = "Coordinate cargo technicians and shaft miners, assist with \
@@ -55,3 +56,4 @@
 	l_hand = /obj/item/clipboard
 
 	chameleon_extras = /obj/item/stamp/head/qm
+JOB REMOVAL END*/

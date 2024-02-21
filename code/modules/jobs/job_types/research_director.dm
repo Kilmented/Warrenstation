@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/research_director
 	title = JOB_RESEARCH_DIRECTOR
 	description = "Supervise research efforts, ensure Robotics is in working \
@@ -87,3 +88,4 @@
 	head = null
 	mask = /obj/item/clothing/mask/breath
 	internals_slot = ITEM_SLOT_SUITSTORE
+JOB REMOVAL END */

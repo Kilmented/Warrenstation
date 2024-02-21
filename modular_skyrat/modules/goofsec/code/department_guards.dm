@@ -457,10 +457,11 @@ JOB REMOVAL END */
 	)
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CE, ACCESS_CHANGE_IDS)
 	job = /datum/job/engineering_guard
-JOB REMOVAL END */ 
+JOB REMOVAL END */
 /*
 	CARGO GUARD DATUMS
 */
+/* JOB REMOVAL START
 /datum/job/customs_agent
 	title = JOB_CUSTOMS_AGENT
 	description = "Inspect the packages coming to and from the station, protect the cargo department, beat the shit out of people trying to ship Cocaine to the Spinward Stellar Coalition."
@@ -559,7 +560,7 @@ JOB REMOVAL END */
 /*
 	SERVICE GUARD DATUMS
 */
-
+JOB REMOVAL END */
 /* JOB REMOVAL START
 /datum/job/bouncer
 	title = JOB_BOUNCER

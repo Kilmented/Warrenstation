@@ -16,10 +16,11 @@
 	desired_atom = /mob/living/simple_animal/pet/poppy
 
 // Structures
+/* SECMEDIC JOB REMOVAL START
 /datum/area_spawn/secmed_locker
 	target_areas = list(/area/station/security/medical, /area/station/security/lockers)
 	desired_atom = /obj/structure/closet/secure_closet/security_medic
-
+SECMED JOB REMOVAL END*/ 
 /datum/area_spawn/blueshield_locker
 	target_areas = list(/area/station/command/heads_quarters/captain, /area/station/command/bridge, /area/station/command/corporate_dock, /area/station/command/meeting_room, /area/station/command/gateway)
 	desired_atom = /obj/structure/closet/secure_closet/blueshield

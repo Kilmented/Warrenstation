@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/virologist
 	title = JOB_VIROLOGIST
 	description = "Study the effects of various diseases and synthesize a \
@@ -58,3 +59,4 @@
 	messenger = /obj/item/storage/backpack/messenger/vir
 
 	box = /obj/item/storage/box/survival/medical
+JOB REMOVAL END */

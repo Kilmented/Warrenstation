@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/chief_medical_officer
 	title = JOB_CHIEF_MEDICAL_OFFICER
 	description = "Coordinate doctors and other medbay employees, ensure they \
@@ -93,3 +94,4 @@
 	mask = /obj/item/clothing/mask/breath/medical
 	r_pocket = /obj/item/flashlight/pen/paramedic
 	internals_slot = ITEM_SLOT_SUITSTORE
+JOB REMOVAL END */

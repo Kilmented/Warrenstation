@@ -32,6 +32,7 @@
 	rpg_title = "Recluse"
 	job_flags = STATION_JOB_FLAGS
 
+JOB REMOVAL END */
 /datum/outfit/job/bitrunner
 	name = "Bitrunner"
 	jobtype = /datum/job/bitrunner
@@ -40,4 +41,4 @@
 	uniform = /obj/item/clothing/under/rank/cargo/bitrunner
 	belt = /obj/item/modular_computer/pda/bitrunner
 	ears = /obj/item/radio/headset/headset_cargo
-JOB REMOVAL END */
+

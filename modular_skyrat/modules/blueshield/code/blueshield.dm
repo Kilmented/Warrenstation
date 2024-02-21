@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/blueshield
 	title = JOB_BLUESHIELD
 	description = "Protect heads of staff, get your fancy gun stolen, cry as the captain touches the supermatter."
@@ -68,3 +69,4 @@
 
 	head = /obj/item/clothing/head/helmet/space/plasmaman/blueshield
 	uniform = /obj/item/clothing/under/plasmaman/blueshield
+JOB REMOVAL END */

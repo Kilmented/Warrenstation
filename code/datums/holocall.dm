@@ -329,10 +329,10 @@
 
 /datum/preset_holoimage/engineer/ce
 	outfit_type = /datum/outfit/job/ce
-
+/* CE JOB REMOVAL START
 /datum/preset_holoimage/engineer/ce/mod
 	outfit_type = /datum/outfit/job/ce/mod
-
+CE JOB REMOVAL END */
 /datum/preset_holoimage/engineer/atmos
 	outfit_type = /datum/outfit/job/atmos
 

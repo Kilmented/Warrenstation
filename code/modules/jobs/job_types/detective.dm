@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/detective
 	title = JOB_DETECTIVE
 	description = "Investigate crimes, gather evidence, perform interrogations, \
@@ -88,3 +89,4 @@
 
 	if(visualsOnly)
 		return
+JOB REMOVAL END */

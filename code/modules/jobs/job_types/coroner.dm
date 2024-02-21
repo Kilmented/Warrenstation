@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/coroner
 	title = JOB_CORONER
 	description = "Perform Autopsies whenever needed, \
@@ -72,3 +73,4 @@
 	messenger = /obj/item/storage/backpack/messenger/coroner
 
 	skillchips = list(/obj/item/skillchip/entrails_reader)
+JOB REMOVAL END */

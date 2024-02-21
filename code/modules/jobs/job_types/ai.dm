@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/ai
 	title = JOB_AI
 	description = "Assist the crew, follow your laws, coordinate your cyborgs."
@@ -119,3 +120,4 @@
 
 /datum/job/ai/get_radio_information()
 	return "<b>Prefix your message with :b to speak with cyborgs and other AIs.</b>"
+JOB REMOVAL END */

@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/paramedic
 	title = JOB_PARAMEDIC
 	description = "Run around the station looking for patients, respond to \
@@ -67,3 +68,4 @@
 	box = /obj/item/storage/box/survival/medical
 	chameleon_extras = /obj/item/gun/syringe
 	pda_slot = ITEM_SLOT_LPOCKET
+JOB REMOVAL END */

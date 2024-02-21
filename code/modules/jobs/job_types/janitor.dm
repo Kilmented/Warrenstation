@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/janitor
 	title = JOB_JANITOR
 	description = "Clean up trash and blood. Replace broken lights. Slip people over."
@@ -62,3 +63,4 @@
 	if(check_holidays(GARBAGEDAY))
 		. += /obj/item/gun/ballistic/revolver
 		. += /obj/item/ammo_box/a357
+ JOB REMOVAL END*/

@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/chaplain
 	title = JOB_CHAPLAIN
 	description = "Hold services and funerals, cremate people, preach your \
@@ -127,3 +128,4 @@
 
 	chameleon_extras = /obj/item/stamp/chap
 	skillchips = list(/obj/item/skillchip/entrails_reader)
+JOB REMOVAL END*/

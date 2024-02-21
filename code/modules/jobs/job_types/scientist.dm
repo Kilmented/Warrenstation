@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/scientist
 	title = JOB_SCIENTIST
 	description = "Do experiments, perform research, feed the slimes, make bombs."
@@ -52,7 +53,7 @@
 	satchel = /obj/item/storage/backpack/satchel/science
 	duffelbag = /obj/item/storage/backpack/duffelbag/science
 	messenger = /obj/item/storage/backpack/messenger/science
-
+JOB REMOVAL END */
 /datum/outfit/job/scientist/pre_equip(mob/living/carbon/human/H)
 	..()
 	try_giving_horrible_tie()
@@ -71,3 +72,4 @@
 
 /datum/outfit/job/scientist/consistent/try_giving_horrible_tie()
 	return
+

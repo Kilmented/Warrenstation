@@ -20,7 +20,7 @@
 
 	display_order = JOB_DISPLAY_ORDER_PSYCHOLOGIST
 	departments_list = list(
-		/datum/job_department/service,
+		/datum/job_department/medical,
 		)
 
 	family_heirlooms = list(/obj/item/storage/pill_bottle)

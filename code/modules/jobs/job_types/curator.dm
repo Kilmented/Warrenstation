@@ -14,7 +14,7 @@
 	plasmaman_outfit = /datum/outfit/plasmaman/curator
 
 	paycheck = PAYCHECK_CREW
-	paycheck_department = ACCOUNT_SRV
+	paycheck_department = ACCOUNT_CIV
 
 	mind_traits = list(TRAIT_TOWER_OF_BABEL)
 

@@ -8,7 +8,7 @@
 
 /obj/effect/mob_spawn/corpse/human/cook
 	name = JOB_COOK
-	outfit = /datum/outfit/job/cook
+	outfit = /datum/outfit/job/assistant
 	icon_state = "corpsecook"
 
 /obj/effect/mob_spawn/corpse/human/doctor

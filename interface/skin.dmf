@@ -10,21 +10,21 @@ macro "default"
 
 
 menu "menu"
-	elem
+	elem 
 		name = "&File"
 		command = ""
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Quick screenshot\tF2"
 		command = ".screenshot auto"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Save screenshot as...\tShift+F2"
 		command = ".screenshot"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = ""
 		command = ""
 		category = "&File"
@@ -34,7 +34,7 @@ menu "menu"
 		command = ".reconnect"
 		category = "&File"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Quit\tAlt-F4"
 		command = ".quit"
 		category = "&File"
@@ -43,40 +43,45 @@ menu "menu"
 		name = "&Help"
 		command = ""
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Admin Help\tF1"
 		command = "adminhelp"
 		category = "&Help"
 		saved-params = "is-checked"
-	elem
+	elem 
 		name = "&Hotkeys"
 		command = "Hotkeys-Help"
 		category = "&Help"
 		saved-params = "is-checked"
-	elem  "Use Internet Routing Relay"
+	elem "Use Internet Routing Relay"
 		name = "Internet Routing Relays"
 		command = "go2relay"
 		saved-params = "is-checked"
 
+
 window "mainwindow"
 	elem "mainwindow"
 		type = MAIN
-		pos = 281,0
+		pos = 291,0
 		size = 640x440
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
 		icon = 'icons\\ui_icons\\common\\tg_32.png'
 		macro = "default"
 		menu = "menu"
+		outer-size = 656x499
+		inner-size = 640x440
 	elem "split"
 		type = CHILD
 		pos = 0,0
 		size = 634x440
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		saved-params = "splitter"
 		left = "mapwindow"
 		right = "infowindow"
@@ -87,6 +92,7 @@ window "mainwindow"
 		size = 200x200
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = ""
 	elem "tooltip"
@@ -95,27 +101,31 @@ window "mainwindow"
 		size = 999x999
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = ""
 
 window "mapwindow"
 	elem "mapwindow"
 		type = MAIN
-		pos = 281,0
-		size = 640x480
+		pos = 291,0
+		size = 1148x992
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 1164x1050
+		inner-size = 1148x1011
 		on-status = ".winset \"status_bar.text=[[*]]\" "
 	elem "map"
 		type = MAP
 		pos = 0,0
-		size = 640x480
+		size = 1148x992
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = "Grand9K Pixel"
-		font-size = 6pt
+		font-size = 6
 		is-default = true
 		right-click = true
 		saved-params = "zoom;letterbox;zoom-mode"
@@ -123,116 +133,54 @@ window "mapwindow"
 	elem "title_browser"
 		type = BROWSER
 		pos = 0,0
-		size = 640x480
+		size = 1148x992
 		anchor1 = 0,0
 		anchor2 = 100,100
 		background-color = none
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
-		auto-format = false
-	elem "status_bar"
-		type = LABEL
-		pos = 0,464
-		size = 280x16
-		anchor1 = 0,100
-		is-visible = true
-		text = ""
-		align = left
-		background-color = #222222
-		text-color = #ffffff
-		border = line
 
 window "infowindow"
 	elem "infowindow"
 		type = MAIN
-		pos = 281,0
-		size = 640x480
-		anchor1 = -1,-1
-		anchor2 = -1,-1
-		saved-params = "pos;size;is-minimized;is-maximized"
-		is-pane = true
-	elem "info"
-		type = CHILD
-		pos = 0,30
-		size = 640x445
-		anchor1 = 0,0
-		anchor2 = 100,100
-		saved-params = "splitter"
-		left = "statwindow"
-		right = "outputwindow"
-		is-vert = false
-	elem "changelog"
-		type = BUTTON
-		pos = 16,5
-		size = 104x20
-		anchor1 = 3,0
-		anchor2 = 19,0
-		saved-params = "is-checked"
-		text = "Changelog"
-		command = "changelog"
-	elem "rules"
-		type = BUTTON
-		pos = 120,5
-		size = 100x20
-		anchor1 = 19,0
-		anchor2 = 34,0
-		saved-params = "is-checked"
-		text = "Rules"
-		command = "rules"
-	elem "wiki"
-		type = BUTTON
-		pos = 220,5
-		size = 100x20
-		anchor1 = 34,0
-		anchor2 = 50,0
-		saved-params = "is-checked"
-		text = "Wiki"
-		command = "wiki"
-	elem "forum"
-		type = BUTTON
-		pos = 320,5
-		size = 100x20
-		anchor1 = 50,0
-		anchor2 = 66,0
-		saved-params = "is-checked"
-		text = "Forum"
-		command = "forum"
-	elem "github"
-		type = BUTTON
-		pos = 420,5
-		size = 100x20
-		anchor1 = 66,0
-		anchor2 = 81,0
-		saved-params = "is-checked"
-		text = "Github"
-		command = "github"
-	elem "report-issue"
-		type = BUTTON
-		pos = 520,5
-		size = 100x20
-		anchor1 = 81,0
-		anchor2 = 97,0
-		saved-params = "is-checked"
-		text = "Report Issue"
-		command = "report-issue"
-
-window "outputwindow"
-	elem "outputwindow"
-		type = MAIN
-		pos = 281,0
-		size = 640x480
+		pos = 291,0
+		size = 1101x736
 		anchor1 = -1,-1
 		anchor2 = -1,-1
 		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
-		outer-size = 656x538
-		inner-size = 640x499
+		outer-size = 1117x794
+		inner-size = 1101x755
+	elem "info"
+		type = CHILD
+		pos = 0,30
+		size = 1101x701
+		anchor1 = 0,0
+		anchor2 = 100,100
+		background-color = none
+		saved-params = "splitter"
+		left = "statwindow"
+		right = "outputwindow"
+		is-vert = false
+
+window "outputwindow"
+	elem "outputwindow"
+		type = MAIN
+		pos = 291,0
+		size = 1080x735
+		anchor1 = -1,-1
+		anchor2 = -1,-1
+		background-color = none
+		saved-params = "pos;size;is-minimized;is-maximized"
+		is-pane = true
+		outer-size = 1096x793
+		inner-size = 1080x754
 	elem "input"
 		type = INPUT
-		pos = 2,460
-		size = 517x20
+		pos = 2,715
+		size = 957x20
 		anchor1 = 0,100
 		anchor2 = 100,100
 		is-default = true
@@ -240,7 +188,7 @@ window "outputwindow"
 		saved-params = "command"
 	elem "oocbutton"
 		type = BUTTON
-		pos = 599,460
+		pos = 1039,715
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = -1,-1
@@ -253,7 +201,7 @@ window "outputwindow"
 		button-type = pushbox
 	elem "saybutton"
 		type = BUTTON
-		pos = 519,460
+		pos = 959,715
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = -1,-1
@@ -266,7 +214,7 @@ window "outputwindow"
 		button-type = pushbox
 	elem "mebutton"
 		type = BUTTON
-		pos = 559,460
+		pos = 999,715
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = -1,-1
@@ -280,16 +228,17 @@ window "outputwindow"
 	elem "browseroutput"
 		type = BROWSER
 		pos = 0,0
-		size = 640x456
+		size = 1080x711
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
 	elem "output"
 		type = OUTPUT
 		pos = 0,0
-		size = 640x456
+		size = 1080x711
 		anchor1 = 0,0
 		anchor2 = 100,100
 		is-default = true
@@ -298,31 +247,38 @@ window "outputwindow"
 window "popupwindow"
 	elem "popupwindow"
 		type = MAIN
-		pos = 281,0
+		pos = 291,0
 		size = 120x120
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
 		can-resize = false
+		outer-size = 136x159
+		inner-size = 120x120
 
 window "preferences_window"
 	elem "preferences_window"
 		type = MAIN
-		pos = 281,0
+		pos = 291,0
 		size = 1280x1000
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
+		outer-size = 1296x1039
+		inner-size = 1280x1000
 	elem "preferences_browser"
 		type = BROWSER
 		pos = 0,0
 		size = 960x1000
 		anchor1 = 0,0
 		anchor2 = 75,100
+		background-color = none
 		saved-params = ""
 	elem "character_preview_map"
 		type = MAP
@@ -336,37 +292,45 @@ window "preferences_window"
 window "statwindow"
 	elem "statwindow"
 		type = MAIN
-		pos = 281,0
-		size = 640x480
+		pos = 291,0
+		size = 1290x880
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 1306x938
+		inner-size = 1290x899
 	elem "statbrowser"
 		type = BROWSER
 		pos = 0,0
-		size = 640x480
+		size = 1290x880
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		is-visible = false
 		saved-params = ""
 
 window "tgui_say"
 	elem "tgui_say"
 		type = MAIN
-		pos = 848,500
+		pos = 291,0
 		size = 231x30
 		anchor1 = 50,50
 		anchor2 = 50,50
+		background-color = none
 		is-visible = false
 		saved-params = ""
 		statusbar = false
 		can-minimize = false
+		outer-size = 247x69
+		inner-size = 231x30
 	elem "browser"
 		type = BROWSER
 		pos = 0,0
 		size = 231x30
 		anchor1 = 0,0
 		anchor2 = 0,0
+		background-color = none
 		saved-params = ""
 

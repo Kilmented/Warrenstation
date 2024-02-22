@@ -55,7 +55,6 @@
 		/datum/job/bartender,
 		/datum/job/botanist,
 		/datum/job/chaplain,
-		/datum/job/clown,
 		/datum/job/curator,
 		/datum/job/janitor,
 		/datum/job/lawyer,

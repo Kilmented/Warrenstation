@@ -316,7 +316,7 @@
 		unset_busy_human_dummy("HOLODISK_PRESET")
 
 /datum/preset_holoimage/clown
-	outfit_type = /datum/outfit/job/clown
+	outfit_type = /datum/outfit/job/assistant
 
 /datum/preset_holoimage/engineer
 	outfit_type = /datum/outfit/job/engineer

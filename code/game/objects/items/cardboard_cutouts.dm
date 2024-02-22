@@ -215,7 +215,7 @@
 	name = "Mime"
 	applied_name = "..."
 	applied_desc = "...(A cardboard cutout of a mime.)"
-	outfit = /datum/outfit/job/mime
+	outfit = /datum/outfit/job/assistant
 
 /datum/cardboard_cutout/mime/get_name()
 	return pick(GLOB.mime_names)

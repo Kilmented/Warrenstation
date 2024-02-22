@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/head_of_personnel
 	title = JOB_HEAD_OF_PERSONNEL
 	description = "Alter access on ID cards, manage the service department, \
@@ -104,3 +105,4 @@
 <li>Don't forget to set a custom occupation! SecHUDs now interface direct with the ID card's trim and display the trim's job icon even when a custom assignment is set.</li>
 </ol>
 	"}
+JOB REMOVAL END */

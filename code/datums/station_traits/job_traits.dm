@@ -16,7 +16,7 @@
 	/// How many positions to spawn?
 	var/position_amount = 1
 	/// Type of job to enable
-	var/datum/job/job_to_add = /datum/job/clown
+	var/datum/job/job_to_add = /datum/job/assistant
 	/// Who signed up to this in the lobby
 	var/list/lobby_candidates
 

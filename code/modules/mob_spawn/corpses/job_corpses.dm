@@ -31,7 +31,7 @@
 
 /obj/effect/mob_spawn/corpse/human/clown
 	name = JOB_CLOWN
-	outfit = /datum/outfit/job/clown
+	outfit = /datum/outfit/job/assistant
 	icon_state = "corpseclown"
 
 /obj/effect/mob_spawn/corpse/human/scientist

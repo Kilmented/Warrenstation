@@ -177,14 +177,6 @@
 		"Medical Director",
 	)
 
-/datum/job/clown
-	alt_titles = list(
-		"Clown",
-		"Comedian",
-		"Jester",
-		"Joker",
-	)
-
 /datum/job/cook
 	alt_titles = list(
 		"Cook",

@@ -326,7 +326,7 @@
 		var/mob/living/carbon/human/new_clown = user
 		for(var/obj/item/to_strip in new_clown)
 			new_clown.dropItemToGround(to_strip)
-		new_clown.dress_up_as_job(SSjob.GetJobType(/datum/job/clown))
+		new_clown.dress_up_as_job(SSjob.GetJobType(/datum/job/assistant))
 		affected_targets.Add(new_clown)
 
 /// Transforms the area to look like a new one

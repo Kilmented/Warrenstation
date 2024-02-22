@@ -32,9 +32,6 @@
 /datum/job/chief_medical_officer
 	akula_outfit = /datum/outfit/akula/doctor
 
-/datum/job/clown
-	akula_outfit = /datum/outfit/akula
-
 /datum/job/cook
 	akula_outfit = /datum/outfit/akula
 

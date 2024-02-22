@@ -1,4 +1,3 @@
-/* JOB REMOVAL START
 /datum/job/clown
 	title = JOB_CLOWN
 	description = "Entertain the crew, make bad jokes, go on a holy quest to find bananium, HONK!"
@@ -102,4 +101,3 @@
 	var/datum/atom_hud/fan = GLOB.huds[DATA_HUD_FAN]
 	fan.show_to(H)
 	H.faction |= FACTION_CLOWN
-JOB REMOVAL END */

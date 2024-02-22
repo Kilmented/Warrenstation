@@ -15,11 +15,11 @@
 	outfit = /datum/outfit/job/roboticist
 	plasmaman_outfit = /datum/outfit/plasmaman/robotics
 	departments_list = list(
-		/datum/job_department/science,
+		/datum/job_department/engineering,
 		)
 
 	paycheck = PAYCHECK_CREW
-	paycheck_department = ACCOUNT_SCI
+	paycheck_department = ACCOUNT_ENG
 
 	display_order = JOB_DISPLAY_ORDER_ROBOTICIST
 

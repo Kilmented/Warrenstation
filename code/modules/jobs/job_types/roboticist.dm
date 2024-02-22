@@ -19,7 +19,7 @@
 		)
 
 	paycheck = PAYCHECK_CREW
-	paycheck_department = ACCOUNT_SCI
+	paycheck_department = ACCOUNT_ENG
 
 	display_order = JOB_DISPLAY_ORDER_ROBOTICIST
 

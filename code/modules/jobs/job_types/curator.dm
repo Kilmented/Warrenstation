@@ -19,9 +19,6 @@
 	mind_traits = list(TRAIT_TOWER_OF_BABEL)
 
 	display_order = JOB_DISPLAY_ORDER_CURATOR
-	departments_list = list(
-		/datum/job_department/service,
-		)
 
 	mail_goodies = list(
 		/obj/item/book/random = 44,

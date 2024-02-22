@@ -62,22 +62,26 @@ menu "menu"
 window "mainwindow"
 	elem "mainwindow"
 		type = MAIN
-		pos = 281,0
+		pos = 291,0
 		size = 640x440
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
 		icon = 'icons\\ui_icons\\common\\tg_32.png'
 		macro = "default"
 		menu = "menu"
+		outer-size = 656x499
+		inner-size = 640x440
 	elem "split"
 		type = CHILD
 		pos = 0,0
 		size = 634x440
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		saved-params = "splitter"
 		left = "mapwindow"
 		right = "infowindow"
@@ -88,6 +92,7 @@ window "mainwindow"
 		size = 200x200
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = ""
 	elem "tooltip"
@@ -96,23 +101,27 @@ window "mainwindow"
 		size = 999x999
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = ""
 
 window "mapwindow"
 	elem "mapwindow"
 		type = MAIN
-		pos = 281,0
-		size = 640x480
+		pos = 291,0
+		size = 1148x992
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 1164x1050
+		inner-size = 1148x1011
 		on-status = ".winset \"status_bar.text=[[*]]\" "
 	elem "map"
 		type = MAP
 		pos = 0,0
-		size = 640x480
+		size = 1148x992
 		anchor1 = 0,0
 		anchor2 = 100,100
 		font-family = "Grand9K Pixel"
@@ -124,41 +133,30 @@ window "mapwindow"
 	elem "title_browser"
 		type = BROWSER
 		pos = 0,0
-		size = 640x480
+		size = 1148x992
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
-	elem "status_bar"
-		type = LABEL
-		pos = 0,464
-		size = 280x16
-		anchor1 = 0,100
-		anchor2 = -1,-1
-		text-color = #ffffff
-		background-color = #222222
-		border = line
-		saved-params = ""
-		text = ""
-		align = left
 
 window "infowindow"
 	elem "infowindow"
 		type = MAIN
-		pos = 627,89
-		size = 640x480
+		pos = 291,0
+		size = 1101x736
 		anchor1 = -1,-1
 		anchor2 = -1,-1
 		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
-		outer-size = 656x538
-		inner-size = 640x499
+		outer-size = 1117x794
+		inner-size = 1101x755
 	elem "info"
 		type = CHILD
 		pos = 0,30
-		size = 640x445
+		size = 1101x701
 		anchor1 = 0,0
 		anchor2 = 100,100
 		background-color = none
@@ -170,16 +168,19 @@ window "infowindow"
 window "outputwindow"
 	elem "outputwindow"
 		type = MAIN
-		pos = 281,0
-		size = 640x480
+		pos = 291,0
+		size = 1080x735
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 1096x793
+		inner-size = 1080x754
 	elem "input"
 		type = INPUT
-		pos = 2,460
-		size = 517x20
+		pos = 2,715
+		size = 957x20
 		anchor1 = 0,100
 		anchor2 = 100,100
 		is-default = true
@@ -187,10 +188,11 @@ window "outputwindow"
 		saved-params = "command"
 	elem "oocbutton"
 		type = BUTTON
-		pos = 599,460
+		pos = 1039,715
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = -1,-1
+		background-color = none
 		border = line
 		saved-params = "is-checked"
 		text = "OOC"
@@ -199,10 +201,11 @@ window "outputwindow"
 		button-type = pushbox
 	elem "saybutton"
 		type = BUTTON
-		pos = 519,460
+		pos = 959,715
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = -1,-1
+		background-color = none
 		border = line
 		saved-params = "is-checked"
 		text = "Say"
@@ -211,10 +214,11 @@ window "outputwindow"
 		button-type = pushbox
 	elem "mebutton"
 		type = BUTTON
-		pos = 559,460
+		pos = 999,715
 		size = 40x20
 		anchor1 = 100,100
 		anchor2 = -1,-1
+		background-color = none
 		border = line
 		saved-params = "is-checked"
 		text = "Me"
@@ -224,16 +228,17 @@ window "outputwindow"
 	elem "browseroutput"
 		type = BROWSER
 		pos = 0,0
-		size = 640x456
+		size = 1080x711
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		is-visible = false
 		is-disabled = true
 		saved-params = ""
 	elem "output"
 		type = OUTPUT
 		pos = 0,0
-		size = 640x456
+		size = 1080x711
 		anchor1 = 0,0
 		anchor2 = 100,100
 		is-default = true
@@ -242,31 +247,38 @@ window "outputwindow"
 window "popupwindow"
 	elem "popupwindow"
 		type = MAIN
-		pos = 281,0
+		pos = 291,0
 		size = 120x120
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
 		can-resize = false
+		outer-size = 136x159
+		inner-size = 120x120
 
 window "preferences_window"
 	elem "preferences_window"
 		type = MAIN
-		pos = 281,0
+		pos = 291,0
 		size = 1280x1000
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		is-visible = false
 		saved-params = "pos;size;is-minimized;is-maximized"
 		statusbar = false
+		outer-size = 1296x1039
+		inner-size = 1280x1000
 	elem "preferences_browser"
 		type = BROWSER
 		pos = 0,0
 		size = 960x1000
 		anchor1 = 0,0
 		anchor2 = 75,100
+		background-color = none
 		saved-params = ""
 	elem "character_preview_map"
 		type = MAP
@@ -280,37 +292,45 @@ window "preferences_window"
 window "statwindow"
 	elem "statwindow"
 		type = MAIN
-		pos = 281,0
-		size = 640x480
+		pos = 291,0
+		size = 1290x880
 		anchor1 = -1,-1
 		anchor2 = -1,-1
+		background-color = none
 		saved-params = "pos;size;is-minimized;is-maximized"
 		is-pane = true
+		outer-size = 1306x938
+		inner-size = 1290x899
 	elem "statbrowser"
 		type = BROWSER
 		pos = 0,0
-		size = 640x480
+		size = 1290x880
 		anchor1 = 0,0
 		anchor2 = 100,100
+		background-color = none
 		is-visible = false
 		saved-params = ""
 
 window "tgui_say"
 	elem "tgui_say"
 		type = MAIN
-		pos = 848,500
+		pos = 291,0
 		size = 231x30
 		anchor1 = 50,50
 		anchor2 = 50,50
+		background-color = none
 		is-visible = false
 		saved-params = ""
 		statusbar = false
 		can-minimize = false
+		outer-size = 247x69
+		inner-size = 231x30
 	elem "browser"
 		type = BROWSER
 		pos = 0,0
 		size = 231x30
 		anchor1 = 0,0
 		anchor2 = 0,0
+		background-color = none
 		saved-params = ""
 

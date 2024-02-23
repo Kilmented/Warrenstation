@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/mime
 	title = JOB_MIME
 	description = "..."
@@ -136,3 +137,4 @@
 	if(!user.mind)
 		return FALSE
 	return TRUE
+JOB REMOVAL END */

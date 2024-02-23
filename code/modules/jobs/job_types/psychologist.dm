@@ -14,13 +14,13 @@
 	plasmaman_outfit = /datum/outfit/plasmaman/psychologist
 
 	paycheck = PAYCHECK_CREW
-	paycheck_department = ACCOUNT_SRV
+	paycheck_department = ACCOUNT_MED
 
 	liver_traits = list(TRAIT_MEDICAL_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_PSYCHOLOGIST
 	departments_list = list(
-		/datum/job_department/service,
+		/datum/job_department/medical,
 		)
 
 	family_heirlooms = list(/obj/item/storage/pill_bottle)

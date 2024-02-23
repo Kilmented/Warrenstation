@@ -124,6 +124,18 @@
 		"Mailman",
 		"Receiving Clerk",
 		"Union Associate",
+	    "Bartender",
+		"Barista",
+		"Barkeeper",
+		"Mixologist",
+		"Cook",
+		"Butcher",
+		"Chef",
+		"Culinary Artist",
+		"Sous-Chef",
+		"Baker",
+		"Confectionist",
+		"Pastry Chef",
 	)
 
 /datum/job/chaplain

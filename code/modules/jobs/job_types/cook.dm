@@ -1,3 +1,4 @@
+/* JOB REMOVAL START
 /datum/job/cook
 	title = JOB_COOK
 	description = "Serve food, cook meat, keep the crew fed."
@@ -92,3 +93,4 @@
 	. = ..()
 	. += /obj/item/clothing/suit/apron/chef
 	. += /obj/item/clothing/head/soft/mime
+JOB REMOVAL END */

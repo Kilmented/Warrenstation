@@ -10,17 +10,32 @@
 	new /obj/item/storage/backpack/satchel/cap(src)
 	new /obj/item/storage/backpack/duffelbag/captain(src)
 	new /obj/item/storage/backpack/messenger/cap(src)
-	new /obj/item/clothing/neck/petcollar(src)
-	new /obj/item/pet_carrier(src)
 	new /obj/item/storage/bag/garment/captain(src)
 	new /obj/item/computer_disk/command/captain(src)
 	new /obj/item/radio/headset/heads/captain/alt(src)
 	new /obj/item/radio/headset/heads/captain(src)
 	new /obj/item/storage/belt/sabre(src)
-	new /obj/item/gun/energy/e_gun(src)
-	new /obj/item/door_remote/captain(src)
-	new /obj/item/storage/photo_album/captain(src)
-	new /obj/item/card/id/departmental_budget(src) //SKYRAT EDIT ADDITION
+	new /obj/item/door_remote/omni(src)
+	new /obj/item/card/id/departmental_budget(src)
+	new /obj/item/storage/box/ids(src)
+	new /obj/item/storage/box/silver_ids(src)
+	new /obj/item/megaphone/command(src)
+	new /obj/item/assembly/flash/handheld(src)
+	new /obj/item/circuitboard/machine/techfab/department/cargo(src)
+	new /obj/item/circuitboard/machine/techfab/department/security(src)
+	new /obj/item/circuitboard/machine/techfab/department/medical(src)
+	new /obj/item/circuitboard/machine/techfab/department/engineering(src)
+
+// shit for Warden
+	new /obj/item/megaphone/sec(src)
+	new /obj/item/holosign_creator/security(src)
+	new /obj/item/storage/lockbox/loyalty(src)
+	new /obj/item/storage/box/flashbangs(src)
+	new /obj/item/shield/riot/tele(src)
+	new /obj/item/storage/belt/security/full(src)
+	new /obj/item/storage/photo_album/hos(src)
+	new /obj/item/radio/headset/heads/hos(src)
+	new /obj/item/radio/headset/heads/hos/alt(src)
 
 /obj/structure/closet/secure_closet/hop
 	name = "head of personnel's locker"

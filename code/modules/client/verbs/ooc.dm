@@ -73,8 +73,14 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 		return
 
 	mob.log_talk(raw_msg, LOG_OOC)
+//	var/keyname = key // commented it out for people to be aware how to revert it. Just delete the edit below <3
 
-	var/keyname = key
+	// main edit here - Changes it to IC name instead of key in OOC messages.
+	var/keyname = GetOOCName()
+
+	if(!keyname)
+		return
+	// edit end here
 
 	if(CONFIG_GET(flag/enable_cross_server_ooc)) //SKYRAT EDIT ADDITION
 		send_ooc_to_other_server(ckey, msg) //SKYRAT EDIT ADDITION
@@ -85,6 +91,8 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	if(prefs.hearted)
 		var/datum/asset/spritesheet/sheet = get_asset_datum(/datum/asset/spritesheet/chat)
 		keyname = "[sheet.icon_tag("emoji-heart")][keyname]"
+	else
+		keyname = GetOOCName()
 
 	//The linkify span classes and linkify=TRUE below make ooc text get clickable chat href links if you pass in something resembling a url
 	for(var/client/receiver as anything in GLOB.clients)
@@ -463,3 +471,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 	ASSERT(prefs, "User attempted to export preferences while preferences were null!") // what the fuck
 
 	prefs.savefile.export_json_to_client(usr, ckey)
+
+/client/proc/GetOOCName()
+	if(mob) // If mob is null I'll be very surprised, worse case, add a sanity check if this becomes an issue in the future.
+		return mob.real_name

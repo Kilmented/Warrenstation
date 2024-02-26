@@ -5,6 +5,7 @@
 	name = "Mining Shuttle External Airlock"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/mapping_helpers/airlock/access/all/supply/mining,
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
 /area/shuttle/mining/large/advanced)
 "dN" = (
@@ -22,6 +23,7 @@
 	},
 /obj/effect/turf_decal/shuttle/exploration/airlock,
 /obj/structure/cable,
+/obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/shuttle/exploration,
 /area/shuttle/mining/large/advanced)
 "hn" = (
@@ -71,11 +73,11 @@
 	},
 /area/shuttle/mining/large/advanced)
 "pa" = (
-/obj/machinery/light/small/directional/south,
 /obj/item/radio/intercom{
 	pixel_y = -29
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 1
 	},
@@ -126,10 +128,10 @@
 	dir = 1
 	},
 /obj/docking_port/mobile{
-	shuttle_id = "mining";
 	name = "mining shuttle";
 	port_direction = 2
 	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/mining,
 /turf/open/floor/iron/shuttle/exploration/flat,
 /area/shuttle/mining/large/advanced)
 "xn" = (
@@ -159,15 +161,14 @@
 /area/shuttle/mining/large/advanced)
 "zb" = (
 /obj/structure/cable,
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 1
 	},
 /area/shuttle/mining/large/advanced)
 "zQ" = (
-/obj/machinery/door/airlock/mining{
-	name = "Mining Shuttle Cockpit"
-	},
+/obj/effect/mapping_helpers/airlock/access/all/supply/mining,
+/obj/machinery/door/airlock/science/glass,
 /turf/open/floor/iron/shuttle/exploration/textured_flat,
 /area/shuttle/mining/large/advanced)
 "Aq" = (
@@ -364,15 +365,16 @@
 	},
 /area/shuttle/mining/large/advanced)
 "Of" = (
-/obj/machinery/light/small/directional/south,
+/obj/machinery/light/warm/directional/south,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 1
 	},
 /area/shuttle/mining/large/advanced)
 "Pw" = (
-/turf/closed/wall/mineral/titanium/shuttle_wall/mining_large{
-	icon_state = "3,9"
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
 	},
+/turf/open/floor/iron/shuttle/exploration/side,
 /area/shuttle/mining/large/advanced)
 "Qw" = (
 /obj/effect/turf_decal/shuttle/exploration/hazardstripe{
@@ -493,7 +495,7 @@ dN
 Dt
 "}
 (4,1,1) = {"
-Pw
+Aq
 hn
 Ur
 YH
@@ -510,7 +512,7 @@ kU
 Ur
 pa
 nQ
-qb
+Pw
 zb
 Oa
 jP

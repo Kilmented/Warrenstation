@@ -90,7 +90,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 			keyname = "<font color='[prefs.read_preference(/datum/preference/color/ooc_color) || GLOB.normal_ooc_colour]'>[icon2html('icons/ui_icons/chat/member_content.dmi', world, "blag")][keyname]</font>"
 	if(prefs.hearted)
 		var/datum/asset/spritesheet/sheet = get_asset_datum(/datum/asset/spritesheet/chat)
-		keyname = "[sheet.icon_tag("emoji-heart")][keyname]"
+		keyname = "[sheet.icon_tag("emoji-heart")][GetOOCName()]"
 	else
 		keyname = GetOOCName()
 

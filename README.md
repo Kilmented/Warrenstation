@@ -1,8 +1,4 @@
-## Bubberstation (A Skyrat Downstream)
-
-[![CI Suite](https://github.com/Bubberstation/Bubberstation/actions/workflows/ci_suite.yml/badge.svg)](https://github.com/Bubberstation/Bubberstation/actions/workflows/ci_suite.yml)
-
-[![resentment](.github/images/badges/built-with-resentment.svg)](.github/images/comics/131-bug-free.png) [![technical debt](.github/images/badges/contains-technical-debt.svg)](.github/images/comics/106-tech-debt-modified.png) [![forinfinityandbyond](.github/images/badges/made-in-byond.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+## Warrenstation
 
 | Website                   | Link                                           |
 |---------------------------|------------------------------------------------|
@@ -15,16 +11,15 @@
 | Bubberstation Discord     | [https://discord.gg/x4CVEHy6u7](https://discord.gg/x4CVEHy6u7) |
 | Coderbus Discord          | [https://discord.gg/Vh8TJp9](https://discord.gg/Vh8TJp9) |
 
-This is Bubberstation's downstream fork of Skyrat, which is in turn a fork of tgstation.
-
 **Please note that this repository contains sexually explicit content and is not suitable for those under the age of 18.**
 
-Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!
+**This is Jaeger's fork of Bubberstation, which is in turn a downstream fork of Skyrat, which is in turn a downstream fork of /tg/station.**
+**We're the D&D 5e to Bubberstation's Skyrim- or the Paranoia Classic to Bubberstation's Paranoia Zap. Come here for a higher roleplaying environment!**
 
 ## Contribution Rules and Guidelines
 
 **1. Do Not Be A Dick**
-- The Bubberstation main repository is run by and contributed by volunteers. You are not entitled to our time and energy. We reserve the right to permanently remove anyone who does not show both our contributor's and maintainer's common decency.
+- The Warrenstation main repository is run by and contributed by volunteers. You are not entitled to our time and energy. We reserve the right to permanently remove anyone who does not show both our contributor's and maintainer's common decency.
 
 **2. This repository will only accept feedback that has to do with the functionality of code, sound, and images**
 - To maintain a proper working space for our contributors and to keep the repository free of clutter. All feedback that does not have to do with the functionality, quality, and review of code will be marked off-topic.
@@ -57,30 +52,14 @@ You are responsible for the testing of your content. You should not mark a pull 
 
 [Maps and Away Missions](.github/guides/MAPS_AND_AWAY_MISSIONS.md)
 
-## Compilation
-
-Find `BUILD.bat` here in the root folder of tgstation, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile.
-
-**The long way**. Find `bin/build.cmd` in this folder, and double click it to initiate the build. It consists of multiple steps and might take around 1-5 minutes to compile. If it closes, it means it has finished its job. You can then [setup the server](.github/guides/RUNNING_A_SERVER.md) normally by opening `tgstation.dmb` in DreamDaemon.
-
-**Building tgstation in DreamMaker directly is deprecated and might produce errors**, such as `'tgui.bundle.js': cannot find file`.
-
-**[How to compile in VSCode and other build options](tools/build/README.md).**
-
 ## TG Guide Contributors
 [Guides for Contributors](.github/CONTRIBUTING.md)
 
 ## LICENSE
-
 All code after [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html).
-
 All code before [commit 333c566b88108de218d882840e61928a9b759d8f on 2014/31/12 at 4:38 PM PST](https://github.com/tgstation/tgstation/commit/333c566b88108de218d882840e61928a9b759d8f) is licensed under [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
 (Including tools unless their readme specifies otherwise.)
-
 See LICENSE and GPLv3.txt for more details.
-
 The TGS DMAPI is licensed as a subproject under the MIT license.
-
 See the footer of [code/__DEFINES/tgs.dm](./code/__DEFINES/tgs.dm) and [code/modules/tgs/LICENSE](./code/modules/tgs/LICENSE) for the MIT license.
-
 All assets including icons and sound are under a [Creative Commons 3.0 BY-SA license](https://creativecommons.org/licenses/by-sa/3.0/) unless otherwise indicated.

@@ -19,3 +19,4 @@
 	icon_state = "siiktajr"
 	icon = 'modular_skyrat/master_files/icons/misc/language.dmi'
 	default_priority = 90
+	secret = TRUE // gone

@@ -1,6 +1,6 @@
 /datum/language/canilunzt
-	name = "Canilunzt"
-	desc = "A somewhat simple language consisting of heavily articulate barks, growls, yapping, and combined movements of the tail and ears. It's natively spoken by the Vulpkanin, although certain groups of gene modders have adopted it as a secondary form of communication. Its parlance has been loosely compared to the Germanic language group."
+	name = "Teknichespra"
+	desc = "One of the most common languages in science and engineering circles. Constant use in these spaces has influenced it with significant use of technical terms even in casual use, not to mention the name of the language itself being a playful insult to the speakers."
 	key = "7"
 	flags = TONGUELESS_SPEECH
 	space_chance = 80
@@ -14,6 +14,6 @@
 		"enem","zandt","tzch","noch","hel","ischt","far","wa","baram","iereng","tech","lach","sam",
 		"mak","lich","gen","or","ag","eck","gec","stag","onn","bin","ket","einech","cresthz","azunein","ghzth"
 	)
-	icon_state = "canilunzt"
+	icon_state = "skrell" // for now until we have custom flags
 	icon = 'modular_skyrat/master_files/icons/misc/language.dmi'
 	default_priority = 90

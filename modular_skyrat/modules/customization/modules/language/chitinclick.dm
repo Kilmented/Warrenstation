@@ -12,3 +12,4 @@
 		// Moffic
 		"ø", "öh", "ää", "år", "käyt", "dår", "ån", "næ", "møt", "om", "när",
 	)
+	secret = TRUE

@@ -9,3 +9,4 @@
 	icon_state = "spacer"
 	icon = 'modular_skyrat/master_files/icons/misc/language.dmi'
 	default_priority = 50
+	secret = TRUE

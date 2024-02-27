@@ -1,6 +1,6 @@
 /datum/language/panslavic
 	name = "Pan-Slavic"
-	desc = "An elaborate mix of various Slavic languages with similar properties that has long since become the official language of the NRI, with a steady amount of relevance in SolFed colonies with Slavic descendants and various types of trading posts and spaceports across Human space - it even managed to find a niche in communication with other species."
+	desc = "The main language components derive from Russian, Serbian, and Belarussian. Most Slavic people find a niche in the Solarian Still performing cheap labor, consequently forming the majority of the population on poorer colonies. Pan-Slavic is rumored to function as a criminal pidgin in richer worlds, according to defense sectors."
 	key = "P"
 	flags = TONGUELESS_SPEECH
 	syllables = list(

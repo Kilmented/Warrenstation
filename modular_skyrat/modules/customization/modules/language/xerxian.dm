@@ -11,3 +11,4 @@
 	icon_state = "xerxian"
 	icon = 'modular_skyrat/master_files/icons/misc/language.dmi'
 	default_priority = 95
+	secret = TRUE

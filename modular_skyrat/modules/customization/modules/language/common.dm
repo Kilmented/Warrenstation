@@ -1,6 +1,6 @@
 /datum/language/common
-	name = "Sol Common"
-	desc = "And when contact was established, the Admiral waved at the screen and said, \"Mi parolas la lingvon de la Homines!\" - I speak the language of Mankind. A simplified mix of Esperanto and Modern Latin, and the only recognized official language of the Sol Federation. This peculiar constructed language became popular during SolFed's earliest days, and was almost entirely overtaken by other popular tongues - it became widespread through heavy-handed political maneuvering with the help of corporate bureaucrats and other undesirables. Nowadays, it's a near-universal tongue and a must-know for any sentient being that plans to leap forward into space."
+	name = "Anglo-American"
+	desc = "A modernized mix of modern Latin of Anglo descent. This peculiar constructed language became popular during the SolarianStill's early days, where the fledgeling city states turned into nations- and united into the guiding hand that supports and delegates galactic efforts today."
 	space_chance = 60
 	syllables = list(
 		"al", "an", "ar", "as", "at", "ed", "er", "ha", "he", "hi", "is", "le", "me", "on", "se", "ti",
@@ -11,5 +11,5 @@
 		"amet", "que", "eius", "modi", "inci","ad", "vel", "eum", "iure", "hic", "pa", "mit", "dis", "du",
 		"di", "tol", "mi", "solari", "ite", "domum"
 	)
-	icon_state = "solcommon"
+	icon_state = "skrell" // until we have english flag
 	icon = 'modular_skyrat/master_files/icons/misc/language.dmi'

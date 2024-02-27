@@ -2,6 +2,7 @@
     name = "Te Velu Akko"
     desc = "fuck you sharks could never survive in space"
     key = "Z"
+	secret = TRUE
     flags = TONGUELESS_SPEECH
     space_chance = 70
     // Syllables derived from the Maori language.
@@ -12,4 +13,3 @@
     icon_state = "azulean"
     icon = 'modular_skyrat/master_files/icons/misc/language.dmi'
     default_priority = 94
-	secret = TRUE

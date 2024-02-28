@@ -10,10 +10,13 @@
 		return
 	if(check_stun_immunity(CANKNOCKDOWN))
 		return
-
+//Warrenstation change: Adds collapse when you enter stamcrit for the first time. Applies a 4 second paralyze if you don't have baton resistance.
+if(!HAS_TRAIT(src,TRAIT_BATON_RESISTANCE))
+		src.emote("collapse")
+//End of bubberstation change.
 	to_chat(src, span_notice("You're too exhausted to keep going..."))
-	add_traits(list(TRAIT_INCAPACITATED, TRAIT_IMMOBILIZED, TRAIT_FLOORED), STAMINA)
-	if(getStaminaLoss() < 162) // Puts you a little further into the initial stamcrit, makes stamcrit harder to outright counter with chems. //SKYRAT EDIT CHANGE
+	add_traits(list(TRAIT_INCAPACITATED, TRAIT_HANDS_BLOCKED, TRAIT_FLOORED), STAMINA) 	//Warrenstation Change, removes TRAIT_IMMOBILIZED, but adds TRAIT_HANDS_BLOCKED. You can still move around in stamcrit. bit you can't use items.
+	if(getStaminaLoss() < 140) // at one point this was 162 but I reduced it because it was a skyrat-ism - Jaeger
 		adjustStaminaLoss(30, FALSE)
 
 /mob/living/carbon/adjust_disgust(amount, max = DISGUST_LEVEL_MAXEDOUT)

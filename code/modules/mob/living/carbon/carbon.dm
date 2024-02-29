@@ -541,7 +541,7 @@
 			enter_stamcrit()
 	else if(HAS_TRAIT_FROM(src, TRAIT_INCAPACITATED, STAMINA))
 		REMOVE_TRAIT(src, TRAIT_INCAPACITATED, STAMINA)
-		REMOVE_TRAIT(src, TRAIT_HANDS_BLOCKED, STAMINA)  //Warrenstation Change, removes TRAIT_IMMOBILIZED, but adds TRAIT_HANDS_BLOCKED. You can still move around in stamcrit. bit you can't use items.
+		REMOVE_TRAIT(src, TRAIT_RESTRAINED, STAMINA)  //Warrenstation Change, removes TRAIT_IMMOBILIZED, but adds TRAIT_RESTRAINED. You can still move around in stamcrit, but you can't use items, and anyone who grabs you is uncontested.
 		REMOVE_TRAIT(src, TRAIT_FLOORED, STAMINA)
 		filters -= FILTER_STAMINACRIT
 	else

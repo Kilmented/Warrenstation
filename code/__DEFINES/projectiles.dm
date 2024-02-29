@@ -9,7 +9,7 @@
 // Delete self without hitting
 #define PROJECTILE_DELETE_WITHOUT_HITTING 3
 
-// Caliber defines: (current count stands at 24)
+// Caliber defines: (current count stands at 24) - actually we're just gonna ignore all of this because /tg/ combat fucking sucks and Skyrat/Bubberstation really didn't help. Just skip to the next block.
 /// The caliber used by the [L6 SAW][/obj/item/gun/ballistic/automatic/l6_saw].
 #define CALIBER_A7MM "a7mm"
 /// The caliber used by the [security auto-rifle][/obj/item/gun/ballistic/automatic/wt550].
@@ -64,6 +64,22 @@
 #define CALIBER_HOOK "hook"
 /// The caliber used by the changeling tentacle mutation.
 #define CALIBER_TENTACLE "tentacle"
+
+// start of Warrenstation calibers. These are the only ones that will actually see use, so, ignore the above.
+
+#define CALIBER_WSCOMPACT "10x30mm Common Security Cartridge"
+
+#define CALIBER_WSMEDIUM "5.56x45mm Common Cartridge"
+
+#define CALIBER_WSLONG "8.6x70mm Common Magnum Cartridge"
+
+#define CALIBER_WSSHOTGUN "12 gauge Common Cartridge"
+
+// Special Warrenstation calibers start below!
+
+#define CALIBER_WSGRENADE "40x46mm Common Grenade Launcher Cartridge"
+
+// End of Warrenstation calibers!
 
 /// For gunpoints, how many tiles around the target the shooter can roam without losing their shot
 #define GUNPOINT_SHOOTER_STRAY_RANGE 2

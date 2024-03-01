@@ -39,7 +39,7 @@
 	tac_reloads = FALSE
 	misfire_probability = 5
 
-/obj/item/gun/ballistic/automatic/proto
+/obj/item/gun/ballistic/automatic/wscompactsmg
 	name = "\improper NTR SMG"
 	desc = "A prototype full-auto 10x30mm Security submachine gun, designated project 'SABER'. Has a threaded barrel for suppressors."
 	icon_state = "saber"
@@ -52,6 +52,167 @@
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
 	misfire_probability = 5
+
+/obj/item/gun/ballistic/revolver/wsmediumrevolver
+	name = "\improper C20-6"
+	desc = "A prototype revolver chambered in 5.56x45mm Gothic, ready for use in all sectors. Six shots, enough to kill anything that moves!"
+	icon_state = "revolver"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/mediumrevolver
+	fire_sound = 'sound/weapons/gun/revolver/shot_alt.ogg'
+	load_sound = 'sound/weapons/gun/revolver/load_bullet.ogg'
+	eject_sound = 'sound/weapons/gun/revolver/empty.ogg'
+	fire_sound_volume = 90
+	dry_fire_sound = 'sound/weapons/gun/revolver/dry_fire.ogg'
+	casing_ejector = FALSE
+	internal_magazine = TRUE
+	bolt_type = BOLT_TYPE_NO_BOLT
+	tac_reloads = FALSE
+	misfire_probability = 5
+
+/obj/item/gun/ballistic/rifle/boltaction/wsmediumboltrifle
+	name = "\improper Sakhno Precision Rifle"
+	desc = "A bleeding edge 'precision' boltrifle that is often given out to the less fortunate to arm themselves against wildlife."
+	icon_state = "sakhno"
+	inhand_icon_state = "sakhno"
+	worn_icon_state = "sakhno"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/mediumboltrifle
+	can_bayonet = TRUE
+	knife_x_offset = 42
+	knife_y_offset = 12
+	can_be_sawn_off = FALSE
+	weapon_weight = WEAPON_HEAVY
+	can_jam = TRUE
+
+/obj/item/gun/ballistic/automatic/wsmediumcarbine
+	name = "\improper NTR ARG-63"
+	desc = "SolStill's bleeding edge prototype based on the Stoner design, fitted with a light polymer frame and other tactical furniture, and chambered in 5.56x45 Gothic - nicknamed 'Boarder' by Special Operations teams."
+	icon = 'modular_skyrat/modules/aesthetics/guns/icons/guns_gubman2.dmi'
+	icon_state = "arg"
+	inhand_icon_state = "arg"
+	slot_flags = 0
+	accepted_magazine_type = /obj/item/ammo_box/magazine/mediumcarbine
+	can_suppress = FALSE
+	burst_size = 3
+	fire_delay = 1
+
+/obj/item/gun/ballistic/revolver/wslongrevolver
+	name = "\improper C30-4"
+	desc = "A prototype revolver chambered in 8.6x70mm Magnum, ready for use in all sectors. FOUR shots, more than enough to kill anything that moves!"
+	icon_state = "revolver"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/mediumrevolver
+	fire_sound = 'sound/weapons/gun/revolver/shot_alt.ogg'
+	load_sound = 'sound/weapons/gun/revolver/load_bullet.ogg'
+	eject_sound = 'sound/weapons/gun/revolver/empty.ogg'
+	fire_sound_volume = 90
+	dry_fire_sound = 'sound/weapons/gun/revolver/dry_fire.ogg'
+	casing_ejector = FALSE
+	internal_magazine = TRUE
+	bolt_type = BOLT_TYPE_NO_BOLT
+	tac_reloads = FALSE
+	misfire_probability = 10 // teehee, the exception
+
+/obj/item/gun/ballistic/rifle/boltaction/wslongboltrifle
+	name = "\improper Sakhno Super-Precision Rifle"
+	desc = "The standard issue in long boltrifles. Was bleeding edge a week ago."
+	icon_state = "sakhno"
+	inhand_icon_state = "sakhno"
+	worn_icon_state = "sakhno"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/longboltrifle
+	can_bayonet = TRUE
+	knife_x_offset = 42
+	knife_y_offset = 12
+	can_be_sawn_off = FALSE
+	weapon_weight = WEAPON_HEAVY
+	can_jam = TRUE
+
+/obj/item/gun/ballistic/automatic/sniper_rifle/wslongrifle
+	name = "SAG-107 anti-personnel rifle"
+	desc = "An illegal Scarborrowed Arms rendition of an prototype bleeding edge rifle."
+	icon_state = "sniper2"
+	fire_sound = 'modular_skyrat/modules/aesthetics/guns/sound/sniperrifle.ogg'
+	suppressed_sound = 'modular_skyrat/modules/aesthetics/guns/sound/sniperrifle_s.ogg'
+	fire_sound_volume = 90
+	vary_fire_sound = FALSE
+	load_sound = 'sound/weapons/gun/sniper/mag_insert.ogg'
+	rack_sound = 'sound/weapons/gun/sniper/rack.ogg'
+	w_class = WEIGHT_CLASS_NORMAL
+	can_suppress = TRUE
+	can_unsuppress = TRUE
+	recoil = 1.8
+	weapon_weight = WEAPON_HEAVY
+	accepted_magazine_type = /obj/item/ammo_box/magazine/longrifle
+	fire_delay = 55
+	burst_size = 1
+	slot_flags = ITEM_SLOT_BACK
+	mag_display = TRUE
+
+/obj/item/gun/ballistic/revolver/wsshotgunrevolver
+	name = "\improper C40-2"
+	desc = "A prototype revolver chambered in 12 Gauge, ready for use in all sectors. Two shotty shots, what's the point?"
+	icon_state = "revolver"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shotgun/two/cylinder
+	fire_sound = 'sound/weapons/gun/revolver/shot_alt.ogg'
+	load_sound = 'sound/weapons/gun/revolver/load_bullet.ogg'
+	eject_sound = 'sound/weapons/gun/revolver/empty.ogg'
+	fire_sound_volume = 90
+	dry_fire_sound = 'sound/weapons/gun/revolver/dry_fire.ogg'
+	casing_ejector = FALSE
+	internal_magazine = TRUE
+	bolt_type = BOLT_TYPE_NO_BOLT
+	tac_reloads = FALSE
+	misfire_probability = 20 // uhoh
+
+/obj/item/gun/ballistic/shotgun/wsdoublebarrel
+	name = "double-barreled shotgun"
+	desc = "A true frontier classic."
+	icon_state = "dshotgun"
+	inhand_icon_state = "shotgun_db"
+	w_class = WEIGHT_CLASS_BULKY
+	weapon_weight = WEAPON_MEDIUM
+	force = 10
+	obj_flags = CONDUCTS_ELECTRICITY
+	slot_flags = ITEM_SLOT_BACK
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shotgun/two
+	obj_flags = UNIQUE_RENAME
+	rack_sound_volume = 0
+	unique_reskin = list("Default" = "dshotgun",
+						"Dark Red Finish" = "dshotgun_d",
+						"Ash" = "dshotgun_f",
+						"Faded Grey" = "dshotgun_g",
+						"Maple" = "dshotgun_l",
+						"Rosewood" = "dshotgun_p"
+						)
+	semi_auto = TRUE
+	bolt_type = BOLT_TYPE_NO_BOLT
+	pb_knockback = 3 // it's a super shotgun!
+
+/obj/item/gun/ballistic/shotgun/wspumpshotgun
+	name = "\improper S3-X shotgun"
+	desc = "A bleeding edge prototype improvement of a traditional shotgun with wood furniture and a five shot tubular magazine on the underneath."
+	icon_state = "shotgun"
+	worn_icon_state = null
+	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
+	inhand_icon_state = "shotgun"
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	fire_sound = 'sound/weapons/gun/shotgun/shot.ogg'
+	fire_sound_volume = 90
+	rack_sound = 'sound/weapons/gun/shotgun/rack.ogg'
+	load_sound = 'sound/weapons/gun/shotgun/insert_shell.ogg'
+	w_class = WEIGHT_CLASS_BULKY
+	force = 10
+	obj_flags = CONDUCTS_ELECTRICITY
+	slot_flags = ITEM_SLOT_BACK
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shotgun
+	semi_auto = FALSE
+	internal_magazine = TRUE
+	casing_ejector = FALSE
+	bolt_wording = "pump"
+	cartridge_wording = "shell"
+	tac_reloads = FALSE
+	weapon_weight = WEAPON_HEAVY
+	pb_knockback = 2
 
 // LINE SEPERATION FOR MAGAZINES
 
@@ -202,13 +363,11 @@
 /obj/item/ammo_casing/wscompact/hitscan
 	name = "10x30mm MilTek Security Cartridge casing"
 	desc = "A 10x30mm Common Security Cartridge casing."
-	caliber = CALIBER_WSCOMPACT
 	projectile_type = /obj/projectile/bullet/wscompact/hitscan
 
 /obj/item/ammo_casing/wscompact/projectile
 	name = "10x30mm RangR Security Cartridge casing"
 	desc = "A 10x30mm Common Security Cartridge casing."
-	caliber = CALIBER_WSCOMPACT
 	projectile_type = /obj/projectile/bullet/wscompact/projectile
 
 /obj/item/ammo_casing/wsmedium
@@ -220,13 +379,11 @@
 /obj/item/ammo_casing/wsmedium/hitscan
 	name = "5.56x45mm MilTek Cartridge casing"
 	desc = "A 5.56x45mm MilTek Cartridge casing."
-	caliber = CALIBER_WSMEDIUM
 	projectile_type = /obj/projectile/bullet/wsmedium/hitscan
 
 /obj/item/ammo_casing/wsmedium/projectile
 	name = "5.56x45mm RangR Cartridge casing"
 	desc = "A 5.56x45mm RangR Cartridge casing."
-	caliber = CALIBER_WSMEDIUM
 	projectile_type = /obj/projectile/bullet/wsmedium/projectile
 
 /obj/item/ammo_casing/wslong
@@ -238,18 +395,17 @@
 /obj/item/ammo_casing/wslong/hitscan
 	name = "8.6x70mm MilTek Magnum Cartridge casing"
 	desc = "A 8.6x70mm MilTek Magnum Cartridge casing."
-	caliber = CALIBER_WSLONG
 	projectile_type = /obj/projectile/bullet/wslong/hitscan
 
 /obj/item/ammo_casing/wslong/projectile
 	name = "8.6x70mm RangR Magnum Cartridge casing"
 	desc = "A 8.6x70mm RangR Magnum Cartridge casing."
-	caliber = CALIBER_WSLONG
 	projectile_type = /obj/projectile/bullet/wslong/projectile
 
 /obj/item/ammo_casing/wsshotgun
 	name = "12 gauge Common Buckshot Cartridge"
 	desc = "A 12 Gauge Common Buckshot cartridge."
+	caliber = CALIBER_WSSHOTGUN
 	icon_state = "rshell"
 	projectile_type = /obj/projectile/bullet/wsshotgun
 	pellets = 4

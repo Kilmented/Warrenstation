@@ -233,7 +233,7 @@
 		return FALSE
 	return TRUE
 
-/obj/item/firing_pin/implant/wsbroken
+/obj/item/firing_pin/implant/wsbroken // for loot
 	name = "broken firing pin"
 	icon_state = "firing_pin_pindi"
 	req_implant = /obj/item/implant/wsbroke_weapons_auth
@@ -244,6 +244,15 @@
 	desc = "Would let you shoot your guns, but it's clearly broken"
 	icon_state = "auth"
 	actions_types = null
+
+/obj/item/firing_pin/wsprimitive
+	name = "primitive firing pin"
+	desc = "A small authentication device, to be inserted into a firearm receiver to allow operation. This one is a primitive version of one, and cannot be removed. "
+	pin_removable = FALSE
+
+/obj/item/firing_pin/wsnormal
+	name = "firing pin"
+	desc = "A small authentication device, to be inserted into a firearm receiver to allow operation. This one is as standard as they come, allowing usage everywhere."
 
 // LINE SEPERATION FOR AMMO BOXES
 
@@ -328,7 +337,7 @@
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	ammo_type = /obj/item/ammo_casing/wslong/projectile
 
-/obj/item/ammo_box/wslong
+/obj/item/ammo_box/wsshotgun
 	name = "12 Gauge Common ammo box"
 	desc = "A box of 12 Gauge Common cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
@@ -339,7 +348,7 @@
 	ammo_type = /obj/item/ammo_casing/wsshotgun
 	max_ammo = 15
 
-/obj/item/ammo_box/wslong/hitscan
+/obj/item/ammo_box/wsshotgun/hitscan
 	name = "12 Gauge MilTek ammo box"
 	desc = "A box of 12 Gauge MilTek cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
@@ -348,7 +357,7 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	ammo_type = /obj/item/ammo_casing/wsshotgun/hitscan
 
-/obj/item/ammo_box/wslong/hitscan
+/obj/item/ammo_box/wsshotgun/hitscan
 	name = "12 Gauge RangR ammo box"
 	desc = "A box of 12 Gauge RangR cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'

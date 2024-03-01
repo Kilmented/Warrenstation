@@ -37,7 +37,7 @@
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
 
-/obj/item/gun/ballistic/automatic/wscompactsmg
+/obj/item/gun/ballistic/automatic/proto/wscompactsmg
 	name = "\improper NTR SMG"
 	desc = "A prototype full-auto 10x30mm Security submachine gun, designated project 'SABER'. Has a threaded barrel for suppressors."
 	icon_state = "saber"
@@ -356,12 +356,12 @@
 
 /obj/item/ammo_casing/wscompact/hitscan
 	name = "10x30mm MilTek Security Cartridge casing"
-	desc = "A 10x30mm Common Security Cartridge casing."
+	desc = "A 10x30mm MilTek Security Cartridge casing."
 	projectile_type = /obj/projectile/bullet/wscompact/hitscan
 
 /obj/item/ammo_casing/wscompact/projectile
 	name = "10x30mm RangR Security Cartridge casing"
-	desc = "A 10x30mm Common Security Cartridge casing."
+	desc = "A 10x30mm RangR Security Cartridge casing."
 	projectile_type = /obj/projectile/bullet/wscompact/projectile
 
 /obj/item/ammo_casing/wsmedium

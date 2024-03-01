@@ -7,6 +7,54 @@
 // That's all the relevant ones. Enjoy.
 // Anyways, here's probably what you were looking for. The order is; Guns, magazines, and -at the very bottom- casings and then projectiles. Take care. - Jaeger
 
+/obj/item/gun/ballistic/automatic/pistol/wscompactpistol
+	name = "\improper M2111"
+	desc = "A protoype of an upgrade to a classic .45 handgun rechambered to 10x30mm Security, ready for use in all sectors."
+	icon = 'modular_skyrat/modules/aesthetics/guns/icons/guns.dmi'
+	inhand_icon_state = "colt"
+	lefthand_file = 'modular_skyrat/modules/aesthetics/guns/icons/guns_lefthand.dmi'
+	righthand_file = 'modular_skyrat/modules/aesthetics/guns/icons/guns_righthand.dmi'
+	w_class = WEIGHT_CLASS_NORMAL
+	accepted_magazine_type = /obj/item/ammo_box/magazine/compactpistol
+	can_suppress = FALSE
+	fire_sound = 'sound/weapons/gun/pistol/shot_alt.ogg'
+	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
+	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
+	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
+	misfire_probability = 5 // manufacturer - 5, home-made, 10
+
+/obj/item/gun/ballistic/revolver/wscompactrevolver
+	name = "\improper C10-8"
+	desc = "A prototype revolver chambered in 10x30mm Security, ready for use in all sectors. Eight shots, make them count!"
+	icon_state = "revolver"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/compactrevolver
+	fire_sound = 'sound/weapons/gun/revolver/shot_alt.ogg'
+	load_sound = 'sound/weapons/gun/revolver/load_bullet.ogg'
+	eject_sound = 'sound/weapons/gun/revolver/empty.ogg'
+	fire_sound_volume = 90
+	dry_fire_sound = 'sound/weapons/gun/revolver/dry_fire.ogg'
+	casing_ejector = FALSE
+	internal_magazine = TRUE
+	bolt_type = BOLT_TYPE_NO_BOLT
+	tac_reloads = FALSE
+	misfire_probability = 5
+
+/obj/item/gun/ballistic/automatic/proto
+	name = "\improper NTR SMG"
+	desc = "A prototype full-auto 10x30mm Security submachine gun, designated project 'SABER'. Has a threaded barrel for suppressors."
+	icon_state = "saber"
+	burst_size = 1
+	actions_types = list()
+	mag_display = TRUE
+	empty_indicator = TRUE
+	accepted_magazine_type = /obj/item/ammo_box/magazine/compactsmg
+	pin = null
+	bolt_type = BOLT_TYPE_LOCKING
+	show_bolt_icon = FALSE
+	misfire_probability = 5
+
+// LINE SEPERATION FOR MAGAZINES
+
 /obj/item/ammo_box/magazine/compactpistol
 	name = "10 round 10x30mm Security pistol magazine"
 	icon_state = "45-8"
@@ -30,7 +78,7 @@
 	max_ammo = 8
 	caliber = CALIBER_WSCOMPACT
 
-/obj/item/ammo_box/magazine/compactsmg // SMG, standard Common
+/obj/item/ammo_box/magazine/compactsmg
 	name = "30 round 10x30mm Security SMG magazine"
 	icon_state = "smg9mm"
 	base_icon_state = "smg9mm"
@@ -43,7 +91,7 @@
 	. = ..()
 	icon_state = "[base_icon_state]-[LAZYLEN(stored_ammo) ? "full" : "empty"]"
 
-/obj/item/ammo_box/magazine/compactsmg/short // short Common
+/obj/item/ammo_box/magazine/compactsmg/short
 	name = "20 round 10x30mm Security SMG magazine"
 	max_ammo = 20
 	w_class = WEIGHT_CLASS_TINY // one size shorter than default
@@ -103,7 +151,6 @@
 	name = "10 round 8.6x70mm Magnum internal magazine"
 	icon_state = ".50mag"
 	base_icon_state = ".50mag"
-	ammo_type = /obj/item/ammo_casing/wslong
 	max_ammo = 8 // really not much more of an improvement but is parity with the internal version.
 
 /obj/item/ammo_box/magazine/internal/shotgun
@@ -123,9 +170,17 @@
 	name = "2 round 12 Gauge breech"
 	max_ammo = 2
 
+/obj/item/ammo_box/magazine/internal/shotgun/two/cylinder
+	name = "2 round 12 Gauge cylinder"
+	max_ammo = 2
+
 /obj/item/ammo_box/magazine/internal/shotgun/one
 	name = "1 round 12 Gauge breech"
 	max_ammo = 1
+
+/obj/item/ammo_box/magazine/internal/shotgun/six
+	name = "3 round 12 Gauge internal magazine"
+	max_ammo = 3
 
 /obj/item/ammo_box/magazine/internal/grenade
 	name = "1 round 40x46mm Grenade Launcher breech"

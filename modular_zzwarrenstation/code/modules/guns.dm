@@ -9,7 +9,7 @@
 
 /obj/item/gun/ballistic/automatic/pistol/wscompactpistol
 	name = "\improper M2111"
-	desc = "A protoype of an upgrade to a classic .45 handgun rechambered to 10x30mm Security, ready for use in all sectors."
+	desc = "A protoype of an upgrade to a classic .45 handgun rechambered to 10x25mm Security, ready for use in all sectors."
 	icon = 'modular_skyrat/modules/aesthetics/guns/icons/guns.dmi'
 	inhand_icon_state = "colt"
 	lefthand_file = 'modular_skyrat/modules/aesthetics/guns/icons/guns_lefthand.dmi'
@@ -21,10 +21,11 @@
 	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/revolver/wscompactrevolver
 	name = "\improper C10-8"
-	desc = "A prototype revolver chambered in 10x30mm Security, ready for use in all sectors. Eight shots, make them count!"
+	desc = "A prototype revolver chambered in 10x25mm Security, ready for use in all sectors. Eight shots, make them count!"
 	icon_state = "revolver"
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/compactrevolver
 	fire_sound = 'sound/weapons/gun/revolver/shot_alt.ogg'
@@ -36,19 +37,20 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/automatic/wscompactsmg
 	name = "\improper NTR SMG"
-	desc = "A prototype full-auto 10x30mm Security submachine gun, designated project 'SABER'. Has a threaded barrel for suppressors."
+	desc = "A prototype full-auto 10x25mm Security submachine gun, designated project 'SABER'. Has a threaded barrel for suppressors."
 	icon_state = "saber"
 	burst_size = 1
 	actions_types = list()
 	mag_display = TRUE
 	empty_indicator = TRUE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/compactsmg
-	pin = null
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/revolver/wsmediumrevolver
 	name = "\improper C20-6"
@@ -64,6 +66,7 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/rifle/boltaction/wsmediumboltrifle
 	name = "\improper Sakhno Precision Rifle"
@@ -78,6 +81,7 @@
 	can_be_sawn_off = FALSE
 	weapon_weight = WEAPON_HEAVY
 	can_jam = TRUE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/automatic/wsmediumcarbine
 	name = "\improper NTR ARG-63"
@@ -90,6 +94,7 @@
 	can_suppress = FALSE
 	burst_size = 3
 	fire_delay = 1
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/revolver/wslongrevolver
 	name = "\improper C30-4"
@@ -105,6 +110,7 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/rifle/boltaction/wslongboltrifle
 	name = "\improper Sakhno Super-Precision Rifle"
@@ -119,6 +125,7 @@
 	can_be_sawn_off = FALSE
 	weapon_weight = WEAPON_HEAVY
 	can_jam = TRUE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/automatic/sniper_rifle/wslongrifle
 	name = "SAG-107 anti-personnel rifle"
@@ -140,6 +147,7 @@
 	burst_size = 1
 	slot_flags = ITEM_SLOT_BACK
 	mag_display = TRUE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/revolver/wsshotgunrevolver
 	name = "\improper C40-2"
@@ -155,6 +163,7 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/shotgun/wsdoublebarrel
 	name = "double-barreled shotgun"
@@ -179,6 +188,7 @@
 	semi_auto = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	pb_knockback = 3 // it's a super shotgun!
+	pin = /obj/item/firing_pin/implant/wsbroken
 
 /obj/item/gun/ballistic/shotgun/wspumpshotgun
 	name = "\improper S3-X shotgun"
@@ -207,11 +217,150 @@
 	tac_reloads = FALSE
 	weapon_weight = WEAPON_HEAVY
 	pb_knockback = 2
+	pin = /obj/item/firing_pin/implant/wsbroken
+
+// LINE SEPERATION FOR FIRING PINS
+/obj/item/firing_pin/wsexplorer
+	name = "SolStill MRE Firing Pin"
+	desc = "A firing pin created and used by SolStill to arm their Mining, Recovery, and Exploration teams to 'arm' their units with guns that won't discharge in civil areas."
+	icon_state = "firing_pin_explorer"
+	fail_message = "Location error!"
+
+// This checks that the user isn't on the station Z-level.
+/obj/item/firing_pin/wsexplorer/pin_auth(mob/living/user)
+	var/turf/station_check = get_turf(user)
+	if(!station_check || is_station_level(station_check.z))
+		return FALSE
+	return TRUE
+
+/obj/item/firing_pin/implant/wsbroken
+	name = "broken firing pin"
+	icon_state = "firing_pin_pindi"
+	req_implant = /obj/item/implant/wsbroke_weapons_auth
+	fail_message = "It seems to be broken!"
+
+/obj/item/implant/wsbroke_weapons_auth
+	name = "broken firearms authentication implant"
+	desc = "Would let you shoot your guns, but it's clearly broken"
+	icon_state = "auth"
+	actions_types = null
+
+// LINE SEPERATION FOR AMMO BOXES
+
+/obj/item/ammo_box/wscompact
+	name = "10x25mm Common Security ammo box"
+	desc = "A box of 10x25mm Common Security cartridges, holds fifty cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_NORMAL
+	caliber = CALIBER_WSCOMPACT
+	ammo_type = /obj/item/ammo_casing/wscompact
+	max_ammo = 50
+
+/obj/item/ammo_box/wscompact/hitscan
+	name = "10x25mm MilTek Security ammo box"
+	desc = "A box of 10x25mm MilTek Security cartridges, holds fifty cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	ammo_type = /obj/item/ammo_casing/wscompact/hitscan
+
+/obj/item/ammo_box/wscompact/projectile
+	name = "10x25mm RangR Security ammo box"
+	desc = "A box of 10x25mm RangR Security cartridges, holds fifty cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	ammo_type = /obj/item/ammo_casing/wscompact/projectile
+
+/obj/item/ammo_box/wsmedium
+	name = "5.56x45mm Common Gothic ammo box"
+	desc = "A box of 5.56x45mm Common Gothic cartridges, holds twenty cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_NORMAL
+	caliber = CALIBER_WSMEDIUM
+	ammo_type = /obj/item/ammo_casing/wsmedium
+	max_ammo = 20
+
+/obj/item/ammo_box/wsmedium/hitscan
+	name = "5.56x45mm MilTek Gothic ammo box"
+	desc = "A box of 5.56x45mm Miltek Gothic cartridges, holds twenty cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	ammo_type = /obj/item/ammo_casing/wsmedium/hitscan
+
+/obj/item/ammo_box/wsmedium/projectile
+	name = "5.56x45mm RangR Gothic ammo box"
+	desc = "A box of 5.56x45mm RangR Gothic cartridges, holds twenty cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	ammo_type = /obj/item/ammo_casing/wsmedium/projectile
+
+/obj/item/ammo_box/wslong
+	name = "8.6x70mm Common Magnum ammo box"
+	desc = "A box of 8.6x70mm Common Magnum cartridges, holds ten cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_NORMAL
+	caliber = CALIBER_WSLONG
+	ammo_type = /obj/item/ammo_casing/wslong
+	max_ammo = 10
+
+/obj/item/ammo_box/wslong/hitscan
+	name = "8.6x70mm MilTek Magnum ammo box"
+	desc = "A box of 8.6x70mm MilTek Magnum cartridges, holds ten cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	ammo_type = /obj/item/ammo_casing/wslong/hitscan
+
+/obj/item/ammo_box/wslong/projectile
+	name = "8.6x70mm RangR Magnum ammo box"
+	desc = "A box of 8.6x70mm RangR Magnum cartridges, holds ten cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	ammo_type = /obj/item/ammo_casing/wslong/projectile
+
+/obj/item/ammo_box/wslong
+	name = "12 Gauge Common ammo box"
+	desc = "A box of 12 Gauge Common cartridges, holds fifteen cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_NORMAL
+	caliber = CALIBER_WSSHOTGUN
+	ammo_type = /obj/item/ammo_casing/wsshotgun
+	max_ammo = 15
+
+/obj/item/ammo_box/wslong/hitscan
+	name = "12 Gauge MilTek ammo box"
+	desc = "A box of 12 Gauge MilTek cartridges, holds fifteen cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_NORMAL
+	ammo_type = /obj/item/ammo_casing/wsshotgun/hitscan
+
+/obj/item/ammo_box/wslong/hitscan
+	name = "12 Gauge RangR ammo box"
+	desc = "A box of 12 Gauge RangR cartridges, holds fifteen cartridges."
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
+	icon_state = "585box"
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	w_class = WEIGHT_CLASS_NORMAL
+	ammo_type = /obj/item/ammo_casing/wsshotgun/hitscan
 
 // LINE SEPERATION FOR MAGAZINES
 
 /obj/item/ammo_box/magazine/compactpistol
-	name = "10 round 10x30mm Security pistol magazine"
+	name = "10 round 10x25mm Security pistol magazine"
 	icon_state = "45-8"
 	base_icon_state = "45"
 	ammo_type = /obj/item/ammo_casing/wscompact
@@ -220,34 +369,37 @@
 	multiple_sprites = AMMO_BOX_PER_BULLET
 	multiple_sprite_use_base = TRUE
 	w_class = WEIGHT_CLASS_TINY
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/compactpistol/extended
-	name = "15 round 10x30mm Security pistol magazine"
+	name = "15 round 10x25mm Security pistol magazine"
 	icon_state = "45-8"
 	base_icon_state = "45"
 	max_ammo = 15
 	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/ammo_box/magazine/internal/compactrevolver
-	name = "8 round 10x30mm Security cylinder"
+	name = "8 round 10x25mm Security cylinder"
 	max_ammo = 8
 	caliber = CALIBER_WSCOMPACT
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/compactsmg
-	name = "30 round 10x30mm Security SMG magazine"
+	name = "30 round 10x25mm Security SMG magazine"
 	icon_state = "smg9mm"
 	base_icon_state = "smg9mm"
 	ammo_type = /obj/item/ammo_casing/wscompact
 	caliber = CALIBER_WSCOMPACT
 	max_ammo = 30 // standard is whatever, short is divided by 1.5, extended is multiplied by 1.5
 	w_class = WEIGHT_CLASS_SMALL
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/compactsmg/update_icon_state()
 	. = ..()
 	icon_state = "[base_icon_state]-[LAZYLEN(stored_ammo) ? "full" : "empty"]"
 
 /obj/item/ammo_box/magazine/compactsmg/short
-	name = "20 round 10x30mm Security SMG magazine"
+	name = "20 round 10x25mm Security SMG magazine"
 	max_ammo = 20
 	w_class = WEIGHT_CLASS_TINY // one size shorter than default
 
@@ -255,11 +407,13 @@
 	name = "6 round 5.56x45mm Gothic cylinder"
 	caliber = CALIBER_WSMEDIUM
 	max_ammo = 6
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/mediumboltrifle
 	name = "5 round 5.56x45mm Gothic internal magazine"
 	caliber = CALIBER_WSMEDIUM
 	max_ammo = 5 // can easily fit more but it's just the galactic standard for hunting
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/mediumboltrifle/extended
 	name = "15 round 5.56x45mm Gothic internal magazine"
@@ -272,6 +426,7 @@
 	caliber = CALIBER_WSMEDIUM
 	max_ammo = 30
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/mediumcarbine/short
 	name = "20 round 5.56x45mm Gothic carbine magazine"
@@ -284,11 +439,13 @@
 	name = "4 round 8.6x70mm Magnum cylinder"
 	caliber = CALIBER_WSLONG
 	max_ammo = 4
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/longboltrifle
 	name = "5 round 8.6x70mm Magnum internal magazine"
 	caliber = CALIBER_WSLONG
 	max_ammo = 5
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/longboltrifle/extended
 	name = "10 round 8.6x70mm Magnum internal magazine"
@@ -301,6 +458,7 @@
 	ammo_type = /obj/item/ammo_casing/wslong
 	max_ammo = 6
 	caliber = CALIBER_WSLONG
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/longrifle/extended
 	name = "10 round 8.6x70mm Magnum internal magazine"
@@ -312,6 +470,7 @@
 	name = "5 round 12 Gauge tube"
 	max_ammo = 5
 	caliber = CALIBER_WSSHOTGUN
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/shotgun/six
 	name = "6 round 12 Gauge tube"
@@ -333,7 +492,7 @@
 	name = "1 round 12 Gauge breech"
 	max_ammo = 1
 
-/obj/item/ammo_box/magazine/internal/shotgun/six
+/obj/item/ammo_box/magazine/internal/shotgun/three
 	name = "3 round 12 Gauge internal magazine"
 	max_ammo = 3
 
@@ -341,6 +500,7 @@
 	name = "1 round 40x46mm Grenade Launcher breech"
 	max_ammo = 1
 	caliber = CALIBER_WSGRENADE
+	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/grenade/eight
 	name = "8 round 40x46mm Grenade Launcher cylinder"
@@ -349,19 +509,19 @@
 // LINE SEPERATION FOR CASINGS
 
 /obj/item/ammo_casing/wscompact
-	name = "10x30mm Common Security Cartridge casing"
-	desc = "A 10x30mm Common Security Cartridge casing."
+	name = "10x25mm Common Security Cartridge casing"
+	desc = "A 10x25mm Common Security Cartridge casing."
 	caliber = CALIBER_WSCOMPACT
 	projectile_type = /obj/projectile/bullet/wscompact
 
 /obj/item/ammo_casing/wscompact/hitscan
-	name = "10x30mm MilTek Security Cartridge casing"
-	desc = "A 10x30mm MilTek Security Cartridge casing."
+	name = "10x25mm MilTek Security Cartridge casing"
+	desc = "A 10x25mm MilTek Security Cartridge casing."
 	projectile_type = /obj/projectile/bullet/wscompact/hitscan
 
 /obj/item/ammo_casing/wscompact/projectile
-	name = "10x30mm RangR Security Cartridge casing"
-	desc = "A 10x30mm RangR Security Cartridge casing."
+	name = "10x25mm RangR Security Cartridge casing"
+	desc = "A 10x25mm RangR Security Cartridge casing."
 	projectile_type = /obj/projectile/bullet/wscompact/projectile
 
 /obj/item/ammo_casing/wsmedium
@@ -441,13 +601,13 @@
 // LINE SEPERATION FOR PROJECTILES
 
 /obj/projectile/bullet/wscompact
-	name = "10x30mm Common Security bullet"
+	name = "10x25mm Common Security bullet"
 	damage = 15
 	stamina = 16.5 // Required. 1.1x the base damage.
 	embedding = list(embed_chance=25, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 
 /obj/projectile/bullet/wscompact/hitscan
-	name = "10x30mm MilTek Security bullet" // MilTek's gimmick is +hitscan +AP
+	name = "10x25mm MilTek Security bullet" // MilTek's gimmick is +hitscan +AP
 	armour_penetration = 15 // +15 AP per size.
 	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/sniper
@@ -465,7 +625,7 @@
 	impact_light_color_override = LIGHT_COLOR_DIM_YELLOW // Just copy everything from hitscan = true and below, it's p-much the one surefire way to keep things comfy.
 
 /obj/projectile/bullet/wscompact/projectile
-	name = "10x30mm RangR Security bullet" // RangR's gimmick is +5 damage + double the embed chance
+	name = "10x25mm RangR Security bullet" // RangR's gimmick is +5 damage + double the embed chance
 	damage = 20 // add 5 damage, double the embed chance,
 	stamina = 22 // Required. 1.1x the base damage.
 	embedding = list(embed_chance=50, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)

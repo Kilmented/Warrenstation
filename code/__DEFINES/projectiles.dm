@@ -67,7 +67,7 @@
 
 // start of Warrenstation calibers. These are the only ones that will actually see use, so, ignore the above.
 
-#define CALIBER_WSCOMPACT "10x30mm Common Security Cartridge"
+#define CALIBER_WSCOMPACT "10x25mm Common Security Cartridge"
 
 #define CALIBER_WSMEDIUM "5.56x45mm Common Gothic Cartridge"
 

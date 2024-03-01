@@ -21,7 +21,6 @@
 	rack_sound = 'sound/weapons/gun/pistol/rack.ogg'
 	lock_back_sound = 'sound/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/weapons/gun/pistol/slide_drop.ogg'
-	misfire_probability = 5 // manufacturer - 5, home-made, 10
 
 /obj/item/gun/ballistic/revolver/wscompactrevolver
 	name = "\improper C10-8"
@@ -37,7 +36,6 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
-	misfire_probability = 5
 
 /obj/item/gun/ballistic/automatic/wscompactsmg
 	name = "\improper NTR SMG"
@@ -51,7 +49,6 @@
 	pin = null
 	bolt_type = BOLT_TYPE_LOCKING
 	show_bolt_icon = FALSE
-	misfire_probability = 5
 
 /obj/item/gun/ballistic/revolver/wsmediumrevolver
 	name = "\improper C20-6"
@@ -67,7 +64,6 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
-	misfire_probability = 5
 
 /obj/item/gun/ballistic/rifle/boltaction/wsmediumboltrifle
 	name = "\improper Sakhno Precision Rifle"
@@ -109,7 +105,6 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
-	misfire_probability = 10 // teehee, the exception
 
 /obj/item/gun/ballistic/rifle/boltaction/wslongboltrifle
 	name = "\improper Sakhno Super-Precision Rifle"
@@ -160,7 +155,6 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
-	misfire_probability = 20 // uhoh
 
 /obj/item/gun/ballistic/shotgun/wsdoublebarrel
 	name = "double-barreled shotgun"

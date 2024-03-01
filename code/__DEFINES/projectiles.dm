@@ -69,7 +69,7 @@
 
 #define CALIBER_WSCOMPACT "10x30mm Common Security Cartridge"
 
-#define CALIBER_WSMEDIUM "5.56x45mm Common Cartridge"
+#define CALIBER_WSMEDIUM "5.56x45mm Common Gothic Cartridge"
 
 #define CALIBER_WSLONG "8.6x70mm Common Magnum Cartridge"
 

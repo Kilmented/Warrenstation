@@ -1,4 +1,4 @@
-/obj/item/ammo_box/magazine/wt550m9
+
 	name = "wt550 magazine (4.6x30mm)"
 	icon_state = "46x30mmt-20"
 	base_icon_state = "46x30mmt"

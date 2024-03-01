@@ -37,7 +37,7 @@
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
 
-/obj/item/gun/ballistic/automatic/proto/wscompactsmg
+/obj/item/gun/ballistic/automatic/wscompactsmg
 	name = "\improper NTR SMG"
 	desc = "A prototype full-auto 10x30mm Security submachine gun, designated project 'SABER'. Has a threaded barrel for suppressors."
 	icon_state = "saber"
@@ -95,7 +95,7 @@
 	name = "\improper C30-4"
 	desc = "A prototype revolver chambered in 8.6x70mm Magnum, ready for use in all sectors. FOUR shots, more than enough to kill anything that moves!"
 	icon_state = "revolver"
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/mediumrevolver
+	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/longrevolver
 	fire_sound = 'sound/weapons/gun/revolver/shot_alt.ogg'
 	load_sound = 'sound/weapons/gun/revolver/load_bullet.ogg'
 	eject_sound = 'sound/weapons/gun/revolver/empty.ogg'

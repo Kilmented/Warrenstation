@@ -34,7 +34,7 @@
 	var/harmful = TRUE
 
 /obj/item/ammo_casing/spent
-	name = "spent bullet casing"
+	name = "spent cartridge casing"
 	loaded_projectile = null
 
 /obj/item/ammo_casing/Initialize(mapload)

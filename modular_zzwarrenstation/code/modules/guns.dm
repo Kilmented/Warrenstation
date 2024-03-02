@@ -349,8 +349,8 @@
 	max_ammo = 15
 
 /obj/item/ammo_box/wsshotgun/hitscan
-	name = "12 Gauge MilTek ammo box"
-	desc = "A box of 12 Gauge MilTek cartridges, holds fifteen cartridges."
+	name = "12 Gauge MilTek Slug ammo box"
+	desc = "A box of 12 Gauge MilTek Slug cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
 	icon_state = "585box"
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
@@ -358,8 +358,8 @@
 	ammo_type = /obj/item/ammo_casing/wsshotgun/hitscan
 
 /obj/item/ammo_box/wsshotgun/hitscan
-	name = "12 Gauge RangR ammo box"
-	desc = "A box of 12 Gauge RangR cartridges, holds fifteen cartridges."
+	name = "12 Gauge RangR Flechette ammo box"
+	desc = "A box of 12 Gauge RangR Flechette cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
 	icon_state = "585box"
 	multiple_sprites = AMMO_BOX_FULL_EMPTY

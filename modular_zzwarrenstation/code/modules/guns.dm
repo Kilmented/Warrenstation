@@ -7,6 +7,8 @@
 // That's all the relevant ones. Enjoy.
 // Anyways, here's probably what you were looking for. The order is; Guns, magazines, and -at the very bottom- casings and then projectiles. Take care. - Jaeger
 
+// LINE BREAK FOR GUN TEMPLATES
+
 /obj/item/gun/ballistic/automatic/pistol/wscompactpistol
 	name = "\improper M2111"
 	desc = "A protoype of an upgrade to a classic .45 handgun rechambered to 10x25mm Security, ready for use in all sectors."
@@ -219,10 +221,16 @@
 	pb_knockback = 2
 	pin = /obj/item/firing_pin/implant/wsbroken
 
+
+// LINE BREAK FOR ACTUAL GUNS
+
+
+
 // LINE SEPERATION FOR FIRING PINS
+
 /obj/item/firing_pin/wsexplorer
-	name = "SolStill MRE Firing Pin"
-	desc = "A firing pin created and used by SolStill to arm their Mining, Recovery, and Exploration teams to 'arm' their units with guns that won't discharge in civil areas."
+	name = "SolStill TAC Firing Pin"
+	desc = "A firing pin created and used by SolStill to allow civilians to use guns without the risk of them going off in civil areas. TAC stands for Tracer And Civilian."
 	icon_state = "firing_pin_explorer"
 	fail_message = "Location error!"
 
@@ -245,7 +253,7 @@
 	icon_state = "auth"
 	actions_types = null
 
-/obj/item/firing_pin/wsprimitive
+/obj/item/firing_pin/wsprimitive // illegal, but crafted
 	name = "primitive firing pin"
 	desc = "A small authentication device, to be inserted into a firearm receiver to allow operation. This one is a primitive version of one, and cannot be removed. "
 	pin_removable = FALSE

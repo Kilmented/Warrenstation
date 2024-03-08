@@ -381,19 +381,15 @@
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
 	icon_state = "pistol_35_standard"
 	base_icon_state = "pistol_35_standard"
-	// base_icon_state = "45" // JIC
-	ammo_type = /obj/item/ammo_casing/wscompact
 	caliber = CALIBER_WSCOMPACT
 	max_ammo = 10
-	multiple_sprites = AMMO_BOX_PER_BULLET
-	multiple_sprite_use_base = TRUE
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	w_class = WEIGHT_CLASS_TINY
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/compactpistol/extended
-	name = "15 round 10x25mm Security pistol magazine"
+	name = "15 round 10x25mm Security extended pistol magazine"
 	icon_state = "pistol_35_stended"
-	// base_icon_state = "45" // JIC
 	max_ammo = 15
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -407,8 +403,6 @@
 	name = "30 round 10x25mm Security SMG magazine"
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
 	icon_state = "pistol_35_stended"
-	// JIC base_icon_state = "smg9mm"
-	ammo_type = /obj/item/ammo_casing/wscompact
 	caliber = CALIBER_WSCOMPACT
 	max_ammo = 30 // standard is whatever, short is divided by 1.5, extended is multiplied by 1.5
 	w_class = WEIGHT_CLASS_SMALL
@@ -429,12 +423,12 @@
 /obj/item/ammo_box/magazine/internal/mediumboltrifle
 	name = "5 round 5.56x45mm Gothic internal magazine"
 	caliber = CALIBER_WSMEDIUM
-	max_ammo = 5 // can easily fit more but it's just the galactic standard for hunting
+	max_ammo = 5
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/mediumboltrifle/extended
 	name = "15 round 5.56x45mm Gothic internal magazine"
-	max_ammo = 15 // told you. this is often offworld militia issue
+	max_ammo = 15
 
 /obj/item/ammo_box/magazine/mediumcarbine
 	name = "30 round 5.56x45mm Gothic carbine magazine"
@@ -473,7 +467,6 @@
 	name = "10 round 8.6x70mm Magnum magazine"
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
 	icon_state = "granata_standard"
-//	base_icon_state = ".50mag" // JIC
 	ammo_type = /obj/item/ammo_casing/wslong
 	max_ammo = 6
 	caliber = CALIBER_WSLONG
@@ -482,7 +475,6 @@
 /obj/item/ammo_box/magazine/longrifle/extended
 	name = "10 round 8.6x70mm Magnum internal magazine"
 	icon_state = "granata_drum"
-// JIC	base_icon_state = ".50mag"
 	max_ammo = 8 // really not much more of an improvement but is parity with the internal version.
 
 /obj/item/ammo_box/magazine/internal/shotgun

@@ -594,7 +594,7 @@
 	pellets = 1
 	variance = 0
 
-/obj/item/ammo_casing/wsshotgun/projectile
+/obj/item/ammo_casing/wsshotgun/hitscan
 	name = "12 gauge RangR Flechette Cartridge"
 	desc = "A 12 Gauge RangR Flechette Cartridge."
 	icon_state = "rshell"
@@ -614,7 +614,7 @@
 /obj/projectile/bullet/wscompact
 	name = "10x25mm Common Security bullet"
 	damage = 15
-	stamina = 16.5 // Required. 1.1x the base damage.
+	stamina = 18 // Required. 1.1x the base damage. - small buff for unarmored
 	embedding = list(embed_chance=25, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 
 /obj/projectile/bullet/wscompact/hitscan
@@ -644,7 +644,7 @@
 /obj/projectile/bullet/wsmedium
 	name = "5.56x45mm Common Security bullet"
 	damage = 30
-	stamina = 33 // Required. 1.1x the base damage.
+	stamina = 35 // Required. 1.1x the base damage.
 	embedding = list(embed_chance=30, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 
 /obj/projectile/bullet/wsmedium/hitscan
@@ -674,7 +674,7 @@
 /obj/projectile/bullet/wslong
 	name = "8.6x70mm Common Magnum bullet"
 	damage = 45
-	stamina = 49.5
+	stamina = 50
 	embedding = list(embed_chance=35, fall_chance=3, jostle_chance=4, ignore_throwspeed_threshold=TRUE, pain_stam_pct=0.4, pain_mult=5, jostle_pain_mult=6, rip_time=10)
 
 /obj/projectile/bullet/wslong/hitscan

@@ -7,6 +7,8 @@
 // That's all the relevant ones. Enjoy.
 // Anyways, here's probably what you were looking for. The order is; Guns, magazines, and -at the very bottom- casings and then projectiles. Take care. - Jaeger
 
+// LINE BREAK FOR GUN TEMPLATES
+
 /obj/item/gun/ballistic/automatic/pistol/wscompactpistol
 	name = "\improper M2111"
 	desc = "A protoype of an upgrade to a classic .45 handgun rechambered to 10x25mm Security, ready for use in all sectors."
@@ -219,10 +221,16 @@
 	pb_knockback = 2
 	pin = /obj/item/firing_pin/implant/wsbroken
 
+
+// LINE BREAK FOR ACTUAL GUNS
+
+
+
 // LINE SEPERATION FOR FIRING PINS
+
 /obj/item/firing_pin/wsexplorer
-	name = "SolStill MRE Firing Pin"
-	desc = "A firing pin created and used by SolStill to arm their Mining, Recovery, and Exploration teams to 'arm' their units with guns that won't discharge in civil areas."
+	name = "SolStill TAC Firing Pin"
+	desc = "A firing pin created and used by SolStill to allow civilians to use guns without the risk of them going off in civil areas. TAC stands for Tracer And Civilian."
 	icon_state = "firing_pin_explorer"
 	fail_message = "Location error!"
 
@@ -245,7 +253,7 @@
 	icon_state = "auth"
 	actions_types = null
 
-/obj/item/firing_pin/wsprimitive
+/obj/item/firing_pin/wsprimitive // illegal, but crafted
 	name = "primitive firing pin"
 	desc = "A small authentication device, to be inserted into a firearm receiver to allow operation. This one is a primitive version of one, and cannot be removed. "
 	pin_removable = FALSE
@@ -349,8 +357,8 @@
 	max_ammo = 15
 
 /obj/item/ammo_box/wsshotgun/hitscan
-	name = "12 Gauge MilTek ammo box"
-	desc = "A box of 12 Gauge MilTek cartridges, holds fifteen cartridges."
+	name = "12 Gauge MilTek Slug ammo box"
+	desc = "A box of 12 Gauge MilTek Slug cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
 	icon_state = "585box"
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
@@ -358,8 +366,8 @@
 	ammo_type = /obj/item/ammo_casing/wsshotgun/hitscan
 
 /obj/item/ammo_box/wsshotgun/hitscan
-	name = "12 Gauge RangR ammo box"
-	desc = "A box of 12 Gauge RangR cartridges, holds fifteen cartridges."
+	name = "12 Gauge RangR Flechette ammo box"
+	desc = "A box of 12 Gauge RangR Flechette cartridges, holds fifteen cartridges."
 	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/trappiste_fabriek/ammo.dmi'
 	icon_state = "585box"
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
@@ -370,20 +378,18 @@
 
 /obj/item/ammo_box/magazine/compactpistol
 	name = "10 round 10x25mm Security pistol magazine"
-	icon_state = "45-8"
-	base_icon_state = "45"
-	ammo_type = /obj/item/ammo_casing/wscompact
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon_state = "pistol_35_standard"
+	base_icon_state = "pistol_35_standard"
 	caliber = CALIBER_WSCOMPACT
 	max_ammo = 10
-	multiple_sprites = AMMO_BOX_PER_BULLET
-	multiple_sprite_use_base = TRUE
+	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	w_class = WEIGHT_CLASS_TINY
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/compactpistol/extended
-	name = "15 round 10x25mm Security pistol magazine"
-	icon_state = "45-8"
-	base_icon_state = "45"
+	name = "15 round 10x25mm Security extended pistol magazine"
+	icon_state = "pistol_35_stended"
 	max_ammo = 15
 	w_class = WEIGHT_CLASS_SMALL
 
@@ -395,20 +401,16 @@
 
 /obj/item/ammo_box/magazine/compactsmg
 	name = "30 round 10x25mm Security SMG magazine"
-	icon_state = "smg9mm"
-	base_icon_state = "smg9mm"
-	ammo_type = /obj/item/ammo_casing/wscompact
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon_state = "pistol_35_stended"
 	caliber = CALIBER_WSCOMPACT
 	max_ammo = 30 // standard is whatever, short is divided by 1.5, extended is multiplied by 1.5
 	w_class = WEIGHT_CLASS_SMALL
 	start_empty = TRUE
 
-/obj/item/ammo_box/magazine/compactsmg/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-[LAZYLEN(stored_ammo) ? "full" : "empty"]"
-
 /obj/item/ammo_box/magazine/compactsmg/short
 	name = "20 round 10x25mm Security SMG magazine"
+	icon_state = "pistol_35_standard"
 	max_ammo = 20
 	w_class = WEIGHT_CLASS_TINY // one size shorter than default
 
@@ -421,16 +423,17 @@
 /obj/item/ammo_box/magazine/internal/mediumboltrifle
 	name = "5 round 5.56x45mm Gothic internal magazine"
 	caliber = CALIBER_WSMEDIUM
-	max_ammo = 5 // can easily fit more but it's just the galactic standard for hunting
+	max_ammo = 5
 	start_empty = TRUE
 
 /obj/item/ammo_box/magazine/internal/mediumboltrifle/extended
 	name = "15 round 5.56x45mm Gothic internal magazine"
-	max_ammo = 15 // told you. this is often offworld militia issue
+	max_ammo = 15
 
 /obj/item/ammo_box/magazine/mediumcarbine
 	name = "30 round 5.56x45mm Gothic carbine magazine"
-	icon_state = ".223"
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon_state = "rifle_standard"
 	ammo_type = /obj/item/ammo_casing/wsmedium
 	caliber = CALIBER_WSMEDIUM
 	max_ammo = 30
@@ -439,7 +442,7 @@
 
 /obj/item/ammo_box/magazine/mediumcarbine/short
 	name = "20 round 5.56x45mm Gothic carbine magazine"
-	icon_state = ".223"
+	icon_state = "rifle_short"
 	max_ammo = 20
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 	w_class = WEIGHT_CLASS_TINY
@@ -461,9 +464,9 @@
 	max_ammo = 8
 
 /obj/item/ammo_box/magazine/longrifle
-	name = "10 round 8.6x70mm Magnum internal magazine"
-	icon_state = ".50mag"
-	base_icon_state = ".50mag"
+	name = "10 round 8.6x70mm Magnum magazine"
+	icon = 'modular_skyrat/modules/modular_weapons/icons/obj/company_and_or_faction_based/carwo_defense_systems/ammo.dmi'
+	icon_state = "granata_standard"
 	ammo_type = /obj/item/ammo_casing/wslong
 	max_ammo = 6
 	caliber = CALIBER_WSLONG
@@ -471,8 +474,7 @@
 
 /obj/item/ammo_box/magazine/longrifle/extended
 	name = "10 round 8.6x70mm Magnum internal magazine"
-	icon_state = ".50mag"
-	base_icon_state = ".50mag"
+	icon_state = "granata_drum"
 	max_ammo = 8 // really not much more of an improvement but is parity with the internal version.
 
 /obj/item/ammo_box/magazine/internal/shotgun
